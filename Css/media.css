@@ -1,0 +1,91 @@
+@media screen and (max-width: 450px) {
+  .lblwelcome {
+  	font-size: 40px;
+    width: 100%;
+  }
+  .lblwelcome1 {
+    font-size: 35px;
+  }
+  .lblwhat {
+  	width: 100%;
+  }
+  .btncoming {
+  	margin-top: 10px;
+  }
+  .lblall {
+  	width: 100%;
+  }
+  .btn-rounded {
+    margin:auto;
+  }
+  .button {
+    display: inline-block;
+    width: 100%;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  .lblaboutmesub {
+    width: 100%;
+  }
+  .lblwhatisfusion {
+    font-size: 23px;
+  }
+  .lblwhatisfusion1 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .lblwelcome {
+    width: 100%;
+  }
+  .lblwhat {
+    width: 100%;
+  }
+  .lblall {
+    width: 100%;
+  }
+  .lblaboutmesub {
+    width: 100%;
+  }
+  .lblwhatisfusion1 {
+    width: 100%;
+  }
+  .lblfooter {
+    text-align: center;
+  }
+  .coltel, .colsocial {
+    text-align: center !important;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .divider hr {
+    width: 100% !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.50), rgba(0, 0, 0, 0));
+    padding: 0px;
+  }
+}
+
+
+@font-face {
+  font-family: "Retronoid";
+  src: url("../Font/retronoid/Retronoid.ttf");
+  src:
+  url("../Font/retronoid/Retronoid.otf") format("opentype");
+}
+@font-face {
+  font-family: "Muli";
+  src: url("../Font/Muli/muli/Muli.ttf");
+}
+@font-face {
+  font-family: "Mont DEMO";
+  src: url("../Font/mont/Mont-HeavyDEMO.otf") format("opentype");
+}
+@font-face {
+  font-family: "Mont DEMOlight";
+  src: url("../Font/mont/Mont-ExtraLightDEMO.otf") format("opentype");
+}

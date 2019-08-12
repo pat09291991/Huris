@@ -1,0 +1,16 @@
+.nav.navbar-nav {
+	font-size: 22px;
+}
+.navbar {
+	background: #232323;
+	font-family: Madeleina Sans;
+	color: #5b5b5b;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;	
+}
+.btnportfolio:hover , .btnabout:hover  , .btncontact:hover  {
+	color:#a5934f !important;
+	cursor:pointer;
+	transition: 0.2s;
+}

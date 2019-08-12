@@ -1,0 +1,489 @@
+body, html {
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+	background-color: #F5F5F5;
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1200px !important;
+	}
+}
+
+.maincontainer {
+	height: 100vh;
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../Image/bg1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* topbar */
+
+.topbar {
+	color: white !important;
+	font-family: hind;
+	font-size: 14px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+hr {
+	height: 1px;
+	background-color: rgba(189, 189, 189, .5);
+	width: auto;
+	border: 0px;
+	margin-top: -2px;
+}
+
+/* Navbar */
+
+.fixed-top {
+	padding-top: 80px;
+	transition: all 0.2s;
+}
+
+.navibar {
+	color: white;
+	font-family: hind semibold;
+	transition: 0.2s;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.nav-link:hover {
+	color: #ffffff;
+	font-family: hind semibold;
+}
+
+.navibar::after, .pfootersub::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: #ffffff .3s;
+	font-family: hind semibold;
+}
+
+.navibar:hover::after, .pfootersub:hover::after {
+	width: 100%;
+	transition: width .3s;
+	font-family: muli semibold;
+}
+
+.btncontact {
+	font-family: hind semibold;
+	padding: 10px 20px !important;
+	color: #EEEEEE !important;
+	font-size: 14px !important;
+	cursor: pointer;
+	transition: 0.2s;
+	border-radius: 5px;
+	border: 2px solid #eeeeee;
+}
+
+.btncontact:hover {
+	background-color: rgba(33, 33, 33, .3)
+}
+
+/* Content Maincontainer */
+
+.p1 {
+	font-size: 50px;
+	font-family: Mont DEMO;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+	line-height: 1cm;
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.p2 {
+	font-size: 50px;
+	font-family: Mont DEMO;
+	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+	opacity: 1;
+	transition: opacity 0.5s;
+}
+
+.p3 {
+	font-size: 50px;
+	font-family: Mont DEMO;
+	color: rgba(255, 255, 255, .8);
+	font-weight: bold;
+	opacity: 1;
+	transition: opacity 0.5s;
+	line-height: 1cm;
+}
+
+.p4 {
+	font-family: hind;
+	font-size: 14px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding:5px 10px;
+	border-radius: 2px;
+	width: max-content;
+}
+.hide {
+	opacity: 0 !important;
+}
+
+.progress-bar {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.btnlearnmore {
+	color: whitesmoke;
+	font-family: hind;
+	font-size: 20px;
+	border: 0px;
+	background-color: transparent;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+
+/* Client */
+
+.imgclient {
+	filter: grayscale(100%);
+	transition: 0.2s;
+}
+.imgclient:hover {
+	filter: grayscale(0%);
+}
+
+/* About us */
+
+.pwho {
+	font-family: hind;
+	color: #424242;
+	font-size: 17px;
+	line-height: 1;
+}
+
+.pabout {
+	font-family: Mont Demo;
+	font-size: 30px;
+	font-weight: bold;
+	color: #323640;
+}
+
+.paboutsub {
+	font-family: hind;
+	font-size: 17px;
+	color: #323640;
+}
+
+.btnreadmore {
+	font-family: hind semibold;
+	color: #424242;
+	font-size: 15px;
+	padding: 10px 20px;
+	background-color: white;
+	border: 2px solid #323640;
+	transition: 0.2s;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-top: 15px;
+	outline: none;
+}
+
+.btnreadmore:hover {
+	background-color: #323640;
+	color: white;
+}
+
+.lblourservices {
+	font-family: hind;
+	font-size: 20px;
+	color: #323640;
+}
+
+.lblwe {
+	font-family: Mont Demo;
+	font-size: 30px;
+	font-weight: bold;
+	color: #323640;
+}
+
+.gallery.box {
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 1%;
+	border: 10px #fff solid;
+}
+
+.gallery .card {
+	position: relative;
+}
+
+.gallery .background, .gallery .background1, .gallery .background2, .gallery .column {
+	height: 405px;
+}
+
+.gallery .background {
+	background: linear-gradient( rgba(66, 66, 66, .6), rgba(66, 66, 66, .6)), url(../Image/leadership1.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background1 {
+	background: linear-gradient( rgba(66, 66, 66, .6), rgba(66, 66, 66, .6)), url(../Image/brainstorm.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background2 {
+	background: linear-gradient( rgba(66, 66, 66, .6), rgba(66, 66, 66, .6)), url(../Image/project.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.gallery .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	background-color: #000;
+	-webkit-transition: opacity 0.35s;
+	-o-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.gallery .info, .gallery .foot {
+	-webkit-transition: bottom 0.35s;
+	-o-transition: bottom 0.35s;
+	transition: bottom 0.35s;
+}
+
+.gallery .info {
+	position: absolute;
+	bottom: -35px;
+	width: 100%;
+}
+
+.gallery .info h2 a {
+	color: #fff;
+	display: block;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+	font-family: hind semibold;
+}
+
+.gallery .info h2 {
+	line-height: 24px;
+	font-size: 18px;
+	padding: 0 10px;
+	font-weight: 400;
+}
+
+.gallery .foot {
+	height: 35px;
+	bottom: -35px;
+	position: relative;
+	color: #fff;
+	padding: 0 10px;
+}
+
+.gallery .foot .line {
+	height: 2px;
+	display: block;
+	margin: 10px 0;
+	background-color: #fff;
+	margin-top: 20px;
+	width: 0%;
+	transition: width 0.6s;
+}
+
+.gallery .date {
+	font-weight: 300;
+}
+
+.gallery .fa-camera-retro {
+	top: 0;
+	left: 0;
+	padding: 10px 10px;
+	position: absolute;
+	color: #fff;
+	font-size: 24px;
+	z-index: 1;
+	transition: font-size 0.35s;
+}
+
+.gallery:hover .info, .gallery:hover .foot {
+	bottom: 10px;
+}
+
+.gallery:hover .overlay {
+	opacity: 0.5;
+}
+
+.gallery:hover .foot .line {
+	width: 100%;
+}
+
+.gallery:hover .fa-camera-retro {
+	font-size: 32px;
+}
+
+.particles {
+	font-family: Mont Demo;
+	font-weight: bold;
+	color: #323640;
+	font-size: 25px;
+}
+
+.particleviewmore {
+	font-family: Mont Demo;
+	font-weight: bold;
+	color: #424242;
+	font-size: 15px;
+	float: right;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.particleviewmore:hover {
+	transition: 0.2s;
+	color: #212121;
+}
+
+.img-article:hover {
+	cursor: pointer;
+	transition: 0.2s;
+	filter: brightness(50%);
+}
+
+.particletitle {
+	font-family: hind Semibold;
+	font-size: 16px;
+	color: #323640;
+}
+
+.particledes {
+	font-family: hind;
+	font-size: 12px;
+	color: #323640;
+	overflow: hidden;
+	position: relative;
+	line-height: 1.3em;
+	max-height: 6.1em;
+	text-align: justify;
+	margin-right: -1em;
+	padding-right: 1em;
+	margin-top: -10px;
+}
+
+.card-title {
+	font-family: hind semibold;
+	font-size: 17px;
+	color: #323640;
+}
+
+.card-text {
+	font-family: hind;
+	font-size: 14px;
+	color: #323640;
+}
+
+
+/* Announcement */
+.card-place {
+	font-family: hind;
+	font-size: 14px;
+	color: #323640;
+	padding:0px !important;
+}
+
+.lbldate {
+	font-family: hind;
+	font-size:14px;
+	color: #ff1744;
+}
+.card-date {
+	font-family: hind semibold;
+	font-size: 20px;
+	color: #ff1744;
+	margin-top:2px;
+	padding:0px !important;
+}
+
+.card-date-num {
+	font-family: hind semibold;
+	font-size:40px;
+	color: #323640;
+	line-height: 1;
+	padding:0px !important;
+}
+
+/* Message us */
+
+.plets {
+	font-family: Mont Demo;
+	font-weight: bold;
+	font-size:35px;
+	color: whitesmoke;
+}
+
+.plets1 {
+	font-family: hind;
+	font-size:14px;
+	color: #eeeeee;
+	width: 50%;
+}
+
+.btnmessage {
+	font-family:hind;
+	font-size: 15px;
+	color: #EEEEEE;
+	background-color: #ff1744;
+	padding:10px 20px;
+	border-radius: 2px;
+	border:0px;
+	cursor: pointer;
+}
+
+.btnmessage:hover {
+	transition: 0.2s;
+	background-color: #F50057;
+}
+
+.confooter {
+	height: 50vh;
+	background-color: transparent;
+	background:  url(../Image/image.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/* footer */
+
+.footer {
+	background-color: #212121;
+}
+
+.pfootertitle {
+	font-family: hind semibold;
+	font-size: 18px;
+	color: white;
+}
+
+.pfootersub {
+	font-family: hind;
+	font-size: 13px;
+	color: whitesmoke;
+	cursor: pointer;
+	width: max-content;
+}
