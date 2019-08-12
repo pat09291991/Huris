@@ -12,7 +12,18 @@
     <title>Human Resource Innovations and Solutions Inc</title>
 </head>
 
-<body>
+<body id = "body">
+    <div class="gooey" id = "loaders">
+
+        <div class="dots">
+            <span class="dot"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
     <div class="container-fluid maincontainer">
         <div class="container">
             <nav class="navbar navbar-expand-md" style="margin-top:0px;">
@@ -500,6 +511,13 @@
         animateDivers(); //call, to start the animation
     });
 
+
+
+    window.addEventListener("load", function () {
+        document.getElementById("loaders").style.opacity = "1";
+        document.getElementById("loaders").style.display = "none";
+        document.getElementById("body").style.overflow = "scoll";
+    });
 </script>
 
 </html>
