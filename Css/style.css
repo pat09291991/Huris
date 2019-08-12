@@ -1,3 +1,19 @@
+/* font */
+@font-face {
+	font-family: "hind";
+	src: url("../Font/hind/hind-regular.otf");
+}
+@font-face {
+	font-family: "hind semibold";
+	src: url("../Font/hind/hind-semibold.otf");
+}
+@font-face {
+	font-family: "Mont DEMO";
+	src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+
+
 body, html {
 	width: 100%;
 	height: auto;
@@ -70,7 +86,7 @@ hr {
 .navibar:hover::after, .pfootersub:hover::after {
 	width: 100%;
 	transition: width .3s;
-	font-family: muli semibold;
+	font-family: hind semibold;
 }
 
 .btncontact {
