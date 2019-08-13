@@ -260,6 +260,54 @@ hr {
 	filter: grayscale(0%);
 }
 
+
+@keyframes scroll {
+	0% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+	100% {
+	  -webkit-transform: translateX(calc(-250px * 7));
+			  transform: translateX(calc(-250px * 7));
+	}
+  }
+  .slider {
+	background: white;
+	height: 100px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+  }
+  .slider::before, .slider::after {
+	background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+	content: "";
+	height: 100px;
+	position: absolute;
+	width: 200px;
+	z-index: 2;
+  }
+  .slider::after {
+	right: 0;
+	top: 0;
+	-webkit-transform: rotateZ(180deg);
+			transform: rotateZ(180deg);
+  }
+  .slider::before {
+	left: 0;
+	top: 0;
+  }
+  .slider .slide-track {
+	-webkit-animation: scroll 30s linear infinite;
+			animation: scroll 30s linear infinite;
+	display: flex;
+	width: calc(250px * 11);
+  }
+  .slider .slide {
+	height: 100px;
+	width: 250px;
+  }
+  
 /* About us */
 
 .pwho {
@@ -291,7 +339,7 @@ hr {
 	border: 2px solid #323640;
 	transition: 0.2s;
 	cursor: pointer;
-	border-radius: 5px;
+	border-radius: 50px;
 	margin-top: 15px;
 	outline: none;
 }
@@ -313,6 +361,27 @@ hr {
 	font-weight: bold;
 	color: #323640;
 }
+
+/* Lets talk */
+.pletstalk {
+	font-family: Mont DEMO;
+	font-size: 30px;
+	font-weight: bold;
+	color: #323640;
+}
+.pletstalksub {
+	font-family: hind;
+	font-size:17px;
+	color: #323640;
+}
+
+.cardsolution:hover {
+	transition:all 0.2s;
+	cursor:pointer;
+	background-color: #323640;
+}
+  
+/* Services */
 
 .gallery.box {
 	width: auto;
