@@ -3,7 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Huris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title> Human Resource Innovations
+        and Solutions</title>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <script src='Script\jquery-3.3.1.min.js'></script>
     <link href='Css/main.css' rel='stylesheet' type='text/css'>
@@ -14,6 +19,8 @@
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/minibarjs@latest/dist/minibar.min.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
+
+
     <script src="Script\pageable.min.js"></script>
 </head>
 
@@ -23,46 +30,201 @@
     </div>
 
     <div class="divlogofooter form-inline">
-        <img src="Image/envelope.png" class="img-fluid imgnewsletter" style="width: 20px;margin-right: 20px;" data-container="body"
-            data-toggle="popover" data-placement="top" data-content="Subscribe to our newsletter!">
+        <img src="Image/envelope.png" class="img-fluid imgnewsletter" style="width: 20px;margin-right: 20px;"
+            data-container="body" data-toggle="popover" data-placement="top"
+            data-content="Subscribe to our newsletter!">
         <div class="horizontal">
 
         </div>
-        <img src="Image/facebook-logo.png" class="img-fluid" style="width: 20px;margin-right: 20px;">
-        <img src="Image/twitter.png" class="img-fluid" style="width: 20px;margin-right: 20px;">
-        <img src="Image/linkedin-logo.png" class="img-fluid" style="width: 20px">
-
-
+        <img src="Image/facebook-logo.png" class="img-fluid" style="width: 18px;margin-right: 20px;">
+        <img src="Image/twitter.png" class="img-fluid" style="width: 18px;margin-right: 20px;">
+        <img src="Image/linkedin-logo.png" class="img-fluid" style="width: 18px">
     </div>
+
+    <div class="divrights">
+        <p>Copyright Human Resource Innovations
+            and Solutions</p>
+    </div>
+
     <div class="anchors">
         <ul>
-            <li><a href="#page-1" class="navibar" data-toggle="popover" data-placement="top"
-                    data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">HOME</a></li>
+            <li><a href="#page-1" class="navibar">HOME</a></li>
             <li><a href="#page-2" class="navibar">SOLUTIONS</a></li>
             <li><a href="#page-3" class="navibar">TRAININGS</a></li>
             <li><a href="#page-6" class="navibar">ABOUT</a></li>
         </ul>
     </div>
 
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li style="width: 100% !important;"><a href="#">Home</a></li>
+                <li style="width: 100% !important;"><a href="#">Solutions</a></li>
+                <li style="width: 100% !important;"><a href="#">Trainings</a></li>
+                <li style="width: 100% !important;"><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
     <main>
         <section data-anchor="page 1">
             <div class="container-fluid h-100">
-                <div class="row h-100 align-items-end">
-                    <div class="col-lg-12">
-                        <p class="pwelcome">Organizational<br>
-                            Effectiveness</p>
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="content text-center" style="margin-left: 20px;">
+                            <p class="pwelcome" id="p1">Desired business results</p>
+                            <p class="pwelcomesub" id="p2">Our brand is knowledge</p>
+                            <div class="progress mx-auto d-flex"
+                                style="background-color: rgba(189, 189, 189, .5) !important;height: 5px;width:250px;">
+                                <div class="progress-bar bg-white" style="width:0%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section data-anchor="page 2"></section>
-        <section data-anchor="page 3"></section>
+        <section data-anchor="page 2">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center justify-content-center d-flex" style = "display:none !important;">
+                    <div class="col-sm-4">
+                        <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                                box-shadow: 1px 1px 15px -7px #000000;background-color: rgba(255,255,255,0.1);">
+                            <div class="card-body">
+                                <label class="lbldate" style="color: #e57373;">Thursday - Friday</label>
+                                <h5 class="card-title" style="color: white;">Building Powerful Teams (CESB Accredited
+                                    Program) <span class="badge badge-danger">Ended</span></h5>
+                                <p class="card-text" style="color: #F5F5F5;">Building powerful a powerful team is an
+                                    essential tool of any
+                                    successful
+                                    and good company.</p>
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                            <img src="Image/locationwhite.png" class="img-fluid" style="width: 20px;">
+                                            <label class="card-place" style="color: white;">Astoria Plaza Hotel</label>
+                                        </div>
+                                        <div class="form-group" style="margin-top:-15px;">
+                                            <img src="Image/feeswhite.png" class="img-fluid" style="width: 18px;">
+                                            <label class="card-place" style="color: white;">P14,560 (VAT
+                                                inclusive)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 text-center" style="border-left: 1px solid #E0E0E0">
+                                        <p class="card-date" style="color: #e57373;">Aug<br><span class="card-date-num"
+                                                style="color: white;">8-9</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                                    box-shadow: 1px 1px 15px -7px #000000;">
+                                <label class="lbldate">Thursday - Friday</label>
+                                <h5 class="card-title">Transformational Leadership (CESB Accredited Program) <span
+                                        class="badge badge-primary">Soon</span></h5>
+                                <p class="card-text">Transformational Leadership is to positively influence the
+                                    organization.
+                                </p>
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                            <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;">
+                                            <label class="card-place">Astoria Plaza Hotel</label>
+                                        </div>
+                                        <div class="form-group" style="margin-top:-15px;">
+                                            <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                                class="card-place">P14,560 (VAT inclusive)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 text-center" style="border-left: 1px solid #E0E0E0">
+                                        <p class="card-date">Aug<br><span class="card-date-num">15-16</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <div class="card-body" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                                    box-shadow: 1px 1px 15px -7px #000000;">
+                                <label class="lbldate">Wednesday - Thursday</label>
+                                <h5 class="card-title">Strategic and Critical Thinking (CESB Accredited Program) <span
+                                        class="badge badge-primary">Soon</span></h5>
+                                <p class="card-text">Strategic and critical thinking is an essential factor for an
+                                    organization
+                                    to succeed.</p>
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                            <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;">
+                                            <label class="card-place">Astoria Plaza Hotel</label>
+                                        </div>
+                                        <div class="form-group" style="margin-top:-15px;">
+                                            <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                                class="card-place">P14,560 (VAT inclusive)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-5 text-center" style="border-left: 1px solid #E0E0E0">
+                                        <p class="card-date">Aug<br><span class="card-date-num">29-30</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-anchor="page 3">
+            <div class="container-fluid h-100">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-4 h-100 colarticle1">
+                        <div class="form-group text-center" style="top: 40%;position:absolute;">
+                            <p class="pdate">02.03.19</p>
+                            <label class="particletitle1">Why today’s HR service delivery model is failing? </label>
+                            <label class="particlecontent1">Human Resource has undergone a numerous process of
+                                transformation over
+                                the past decades. </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle2">
+                        <div class="form-group text-center" style="top: 40%;position:absolute;">
+                            <p class="pdate">02.03.19</p>
+                            <label class="particletitle1">Why today’s HR service delivery model is failing? </label>
+                            <label class="particlecontent1">Human Resource has undergone a numerous process of
+                                transformation over
+                                the past decades. </label>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle3">
+                        <div class="form-group text-center" style="top: 40%;position:absolute;">
+                            <p class="pdate">02.03.19</p>
+                            <label class="particletitle1">Why today’s HR service delivery model is failing? </label>
+                            <label class="particlecontent1">Human Resource has undergone a numerous process of
+                                transformation over
+                                the past decades. </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section data-anchor="page 4"></section>
         <section data-anchor="page 5"></section>
         <section data-anchor="page 6"></section>
     </main>
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@5"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 <script>
     const pageable = new Pageable("main", {
@@ -86,6 +248,57 @@
             $(".imgnewsletter").popover('dispose');
         });
     });
+
+    $(document).ready(function () {
+        function animateDivers() {
+            $('.progress-bar').animate(
+                { 'width': '100%' }
+                , 5000
+            )
+                .animate(
+                    { 'width': '0%' }
+                    , 1
+                    , animateDivers //callback the function, to restart animation cycle
+                );
+        }
+
+        animateDivers(); //call, to start the animation
+    });
+
+
+    var text = ["Our Brand is knowledge", "Organizational effectiveness"];
+    var text2 = ["Desired business results", "The best breed in HR solutions", "We offer you the best"];
+    var counter = 0;
+    var elem = document.getElementById("p1");
+    var elem1 = document.getElementById("p2");
+    setInterval(change, 5000);
+
+    function change() {
+        elem.classList.add('hide');
+        elem1.classList.add('hide');
+        setTimeout(function () {
+            elem.innerHTML = text[counter];
+            elem.classList.remove('hide');
+            elem1.innerHTML = text2[counter];
+            elem1.classList.remove('hide');
+            counter++;
+            if (counter >= text.length) {
+                counter = 0;
+            }
+        }, 200);
+    }
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    AOS.init();
+
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+
 </script>
 
 </html>
