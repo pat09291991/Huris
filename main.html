@@ -30,9 +30,9 @@
     </div>
 
     <div class="divlogofooter form-inline">
-        <img src="Image/envelope.png" class="img-fluid imgnewsletter" style="width: 20px;margin-right: 20px;"
-            data-container="body" data-toggle="popover" data-placement="top"
-            data-content="Subscribe to our newsletter!">
+        <img src="Image/envelope.png" class="img-fluid imgnewsletter"
+            style="width: 20px;margin-right: 20px;cursor:pointer;" data-container="body" data-toggle="popover"
+            data-placement="top" data-content="Subscribe to our newsletter!">
         <div class="horizontal">
 
         </div>
@@ -74,6 +74,30 @@
     </div>
 
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="padding: 0px 10px;">
+                <div class="modal-header" style="border: 0px;padding-top:25px;padding-bottom: 0px;">
+                    <h5 class="modal-title" id="exampleModalLabel"><img src="Image/hurisblue.png" class="img-fluid"
+                            style="width: 20px;margin-right: 2px;">Huris</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="border: 0px;">
+                    <p class="penter">Enter your email</p>
+                    <p class="pnews">Want to read our post and stay updated in our events? Subscribe to our newsletter.
+                    </p>
+                    <input type="text" class="txtnews">
+                    <button type="button" class="btnenter">Subscribe</button>
+                    <p class = "pquestions">Questions? Email us at <span style = "color: #3F51B5;">huris@gmail.com</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <main>
         <section data-anchor="page 1">
@@ -94,7 +118,7 @@
         </section>
         <section data-anchor="page 2">
             <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center d-flex" style = "display:none !important;">
+                <div class="row h-100 align-items-center justify-content-center d-flex">
                     <div class="col-sm-4">
                         <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
                                 box-shadow: 1px 1px 15px -7px #000000;background-color: rgba(255,255,255,0.1);">
@@ -188,31 +212,46 @@
         <section data-anchor="page 3">
             <div class="container-fluid h-100">
                 <div class="row h-100 justify-content-center align-items-center">
-                    <div class="col-lg-4 col-md-4 h-100 colarticle1">
-                        <div class="form-group text-center" style="top: 40%;position:absolute;">
-                            <p class="pdate">02.03.19</p>
-                            <label class="particletitle1">Why today’s HR service delivery model is failing? </label>
-                            <label class="particlecontent1">Human Resource has undergone a numerous process of
-                                transformation over
-                                the past decades. </label>
+                    <div class="col-lg-4 col-md-4 h-100" style="padding: 0px !important;">
+                        <div class="outer-div">
+                            <div class="inner-div">
+                                <div class="form-group text-center" style="top: 40%;position:absolute;">
+                                    <p class="pdate">02.03.19</p>
+                                    <label class="particletitle1">Why today’s HR service delivery model is failing?
+                                    </label>
+                                    <label class="particlecontent1">Human Resource has undergone a numerous process of
+                                        transformation over
+                                        the past decades. </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 h-100 colarticle2">
-                        <div class="form-group text-center" style="top: 40%;position:absolute;">
-                            <p class="pdate">02.03.19</p>
-                            <label class="particletitle1">Why today’s HR service delivery model is failing? </label>
-                            <label class="particlecontent1">Human Resource has undergone a numerous process of
-                                transformation over
-                                the past decades. </label>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle2" style="padding: 0px !important;">
+                        <div class="outer-div1">
+                            <div class="inner-div1">
+                                <div class="form-group text-center" style="top: 40%;position:absolute;">
+                                    <p class="pdate">02.03.19</p>
+                                    <label class="particletitle1">The Next Generation HR
+                                    </label>
+                                    <label class="particlecontent1">The emergence of cutting edge technologies has
+                                        brought drastic changes
+                                        in the world of business. </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 h-100 colarticle3">
-                        <div class="form-group text-center" style="top: 40%;position:absolute;">
-                            <p class="pdate">02.03.19</p>
-                            <label class="particletitle1">Why today’s HR service delivery model is failing? </label>
-                            <label class="particlecontent1">Human Resource has undergone a numerous process of
-                                transformation over
-                                the past decades. </label>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle3" style="padding: 0px !important;">
+                        <div class="outer-div2">
+                            <div class="inner-div2">
+                                <div class="form-group text-center" style="top: 40%;position:absolute;">
+                                    <p class="pdate">02.03.19</p>
+                                    <label class="particletitle1">Philippines finalists to the ABA 2017
+                                    </label>
+                                    <label class="particlecontent1">This coming Sept. 6, we shall name the latest
+                                        winners of the ASEAN
+                                        Business Awards 2017. </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -246,6 +285,7 @@
 
         $(".imgnewsletter").on('click', function () {
             $(".imgnewsletter").popover('dispose');
+            $('#exampleModal').modal('show');
         });
     });
 
