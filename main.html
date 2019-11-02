@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/minibarjs@latest/dist/minibar.min.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <script src="Script\pageable.min.js"></script>
 </head>
@@ -91,7 +91,8 @@
                     </p>
                     <input type="text" class="txtnews">
                     <button type="button" class="btnenter">Subscribe</button>
-                    <p class = "pquestions">Questions? Email us at <span style = "color: #3F51B5;">huris@gmail.com</span></p>
+                    <p class="pquestions">Questions? Email us at <span style="color: #3F51B5;">huris@gmail.com</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -105,7 +106,7 @@
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="content text-center" style="margin-left: 20px;">
-                            <p class="pwelcome" id="p1">Desired business results</p>
+                            <p class="pwelcome animated bounce" id="p1">Desired business results</p>
                             <p class="pwelcomesub" id="p2">Our brand is knowledge</p>
                             <div class="progress mx-auto d-flex"
                                 style="background-color: rgba(189, 189, 189, .5) !important;height: 5px;width:250px;">
@@ -118,7 +119,8 @@
         </section>
         <section data-anchor="page 2">
             <div class="container h-100">
-                <div class="row h-100 align-items-center justify-content-center d-flex" style = "display:none !important;">
+                <div class="row h-100 align-items-center justify-content-center d-flex"
+                    style="display:none !important;">
                     <div class="col-sm-4">
                         <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
                                 box-shadow: 1px 1px 15px -7px #000000;background-color: rgba(255,255,255,0.1);">
@@ -215,7 +217,7 @@
                     <div class="col-lg-4 col-md-4 h-100" style="padding: 0px !important;">
                         <div class="outer-div">
                             <div class="inner-div">
-                                <div class="form-group text-center" style="top: 40%;position:absolute;">
+                                <div class="form-group text-center colart1" style="top: 40%;position:absolute;">
                                     <p class="pdate">02.03.19</p>
                                     <label class="particletitle1">Why today’s HR service delivery model is failing?
                                     </label>
@@ -229,7 +231,7 @@
                     <div class="col-lg-4 col-md-4 h-100 colarticle2" style="padding: 0px !important;">
                         <div class="outer-div1">
                             <div class="inner-div1">
-                                <div class="form-group text-center" style="top: 40%;position:absolute;">
+                                <div class="form-group text-center colart2" style="top: 40%;position:absolute;">
                                     <p class="pdate">02.03.19</p>
                                     <label class="particletitle1">The Next Generation HR
                                     </label>
@@ -243,7 +245,7 @@
                     <div class="col-lg-4 col-md-4 h-100 colarticle3" style="padding: 0px !important;">
                         <div class="outer-div2">
                             <div class="inner-div2">
-                                <div class="form-group text-center" style="top: 40%;position:absolute;">
+                                <div class="form-group text-center colart3" style="top: 40%;position:absolute;">
                                     <p class="pdate">02.03.19</p>
                                     <label class="particletitle1">Philippines finalists to the ABA 2017
                                     </label>
@@ -257,9 +259,27 @@
                 </div>
             </div>
         </section>
-        <section data-anchor="page 4"></section>
-        <section data-anchor="page 5"></section>
-        <section data-anchor="page 6"></section>
+        <section data-anchor="page 4">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6 colart1">
+                        <p class="pfooter">Let's do<br>something<br>awesome today</p>
+                        <p class="pquestionsfooter">Questions? Contact us at <span
+                                style="text-decoration: underline;">huris@gmail.com</span></p>
+                    </div>
+                    <div class="col-lg-3 colart2 col2footer" style = "margin-top: -40px;">
+                        <p class="ptitlefooter">Phone</p>
+                        <p class="ptitlefootersub">(02) 896 7895 <br> (02) 661 5954</p>
+                    </div>
+                    <div class="col-lg-3 colart3 col3footer">
+                        <p class="ptitlefooter">Address</p>
+                        <p class="ptitlefootersub">Suite M3, Seven East Capitol Building
+                            #7 East Capitol Drive, Barangay Kapitolyo Pasig City,
+                            Metro Manila 1603 Philippines</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@5"></script>
@@ -269,7 +289,21 @@
     const pageable = new Pageable("main", {
         freeScroll: true,
         swipeThreshold: 200,
-        infinite: true
+        infinite: true,
+        onBeforeStart: function () {
+            $('.colart1').removeClass("animated zoomIn");
+            $('.colart2').removeClass("animated zoomIn");
+            $('.colart3').removeClass("animated zoomIn");
+        },
+        onFinish: function () {
+            $('.colart1').removeClass("animated zoomIn");
+            $('.colart1').addClass("animated zoomIn faster");
+            $('.colart2').removeClass("animated zoomIn");
+            $('.colart2').addClass("animated zoomIn faster delay");
+            $('.colart3').removeClass("animated zoomIn");
+            $('.colart3').addClass("animated zoomIn faster delay-1s");
+
+        },
     });
 
     $(function () {
@@ -338,6 +372,17 @@
         $(this).toggleClass('active');
         $('#overlay').toggleClass('open');
     });
+
+
+    $.fn.isInViewport = function () {
+        let elementTop = $(this).offset().top;
+        let elementBottom = elementTop + $(this).outerHeight();
+
+        let viewportTop = $(window).scrollTop();
+        let viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
 
 </script>
 
