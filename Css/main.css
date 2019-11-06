@@ -15,6 +15,11 @@
   src: url("../Font/hind/hind-semibold.otf");
 }
 
+@font-face {
+  font-family: "AvertaStd-Regular";
+  src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
 
 
 * {
@@ -92,6 +97,7 @@
     font-size: 20px !important;
   }
 }
+
 
 .center {
   position: absolute;
@@ -585,7 +591,7 @@ html {
 }
 
 #page-2 {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../Image/bg3.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../Image/event.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -594,12 +600,6 @@ html {
 #page-3 {
   background-color: #424242;
 }
-
-.colarticle1 {}
-
-.colarticle2 {}
-
-.colarticle3 {}
 
 .pdate {
   font-family: roboto, sans-serif;
@@ -791,10 +791,10 @@ nav ul li:hover a span {
 
 .btn-5,
 .btn-5::after {
-  -webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-	transition: all 0.3s;
+  -webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+	transition: all 0.1s;
 }
 
 .btn-5 {
@@ -840,7 +840,7 @@ nav ul li:hover a span {
   left: -35%;
   top: 0;
   transform: skew(50deg);
-  transition-duration: 0.6s;
+  transition-duration: 0.4s;
   transform-origin: top left;
   width: 0;
 }
@@ -1078,4 +1078,223 @@ nav ul li:hover a span {
   font-size: 0.9rem;
   font-weight: 300 !important;
 }
+
+.box {
+  background-color: white !important;;
+  border: 1px solid white;
+  width: 70px;
+  padding: 10px 5px;
+}
+
+.pmonth, .pyear {
+  font-family: roboto, sans-serif;
+  color: #1976D2;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 120%;
+  margin-bottom: 0px;
+}
+
+.peventtitle {
+  font-family: AvertaStd-Regular;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: -8px;
+  line-height: 120%;
+}
+
+.peventlocation {
+  font-family: roboto, sans-serif;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-top: -15px;
+}
+
+.pmaintitle {
+  font-family: roboto, sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-left: -15px;
+}
+
+.pmainevent {
+  font-family: AvertaStd-Regular;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 120%;
+  margin-top: -10px;
+}
+
+.peventtime {
+  font-family: roboto, sans-serif;
+  color: #212121;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin-top: -5px;
+  border-radius: 2px;
+  background-color: white;
+  padding: 8px 10px;
+  width: max-content;
+}
+
+.peventmainlocation {
+  font-family: roboto, sans-serif;
+  color: white;
+  font-size: 0.9rem;
+  margin-top: -5px;
+}
+
+ul li {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.the-arrow {
+  width: 1px;
+  transition: all 0.2s;
+}
+.the-arrow.-left {
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+.the-arrow.-left > .shaft {
+  width: 0;
+  background-color: #fff;
+}
+.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+  width: 0;
+  background-color: #fff;
+}
+.the-arrow.-left > .shaft:before {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.the-arrow.-left > .shaft:after {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.the-arrow.-right {
+  top: 1px;
+}
+.the-arrow.-right > .shaft {
+  width: 1px;
+  transition-delay: 0.2s;
+}
+.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+  width: 8px;
+  transition-delay: 0.3s;
+  transition: all 0.5s;
+}
+.the-arrow.-right > .shaft:before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+.the-arrow.-right > .shaft:after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+.the-arrow > .shaft {
+  background-color: #fff;
+  display: block;
+  height: 1px;
+  position: relative;
+  transition: all 0.2s;
+  transition-delay: 0;
+  will-change: transform;
+}
+.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+  background-color: #fff;
+  content: '';
+  display: block;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.2s;
+  transition-delay: 0;
+}
+.the-arrow > .shaft:before {
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+.the-arrow > .shaft:after {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.animated-arrow {
+  font-family: roboto, sans-serif;
+  display: inline-block;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.2s;
+}
+.animated-arrow:hover {
+  color: #fff;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft {
+  width: 64px;
+  transition-delay: 0.1s;
+  background-color: #fff;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  width: 8px;
+  transition-delay: 0.1s;
+  background-color: #fff;
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+.animated-arrow:hover > .main {
+  -webkit-transform: translateX(17px);
+          transform: translateX(17px);
+  -webkit-transform: translateX(80px);
+          transform: translateX(80px);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+  width: 0;
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
+  transition-delay: 0;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  width: 0;
+  transition-delay: 0;
+  transition: all 0.1s;
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+.animated-arrow > .main {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+.animated-arrow > .main > .text {
+  margin: 0 16px 0 0;
+  line-height: 1;
+}
+.animated-arrow > .main > .the-arrow {
+  position: relative;
+}
+
+
+
 
