@@ -1,0 +1,213 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: "Mont DEMO";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+    font-family: "hind semibold";
+    src: url("../Font/hind/hind-semibold.otf");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+@media only screen and (min-width: 1200px) {
+    .con {
+        max-width: 1360px !important;
+    }
+}
+
+.connavbar {
+    background-color: #212121;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      transition: opacity 0.35s, transform 0.35s;
+      -webkit-transform: scale(0,1);
+      transform: scale(0,1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.pdate {
+    font-family: roboto, sans-serif;
+    color: #455A64;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.particletitle {
+    font-family: Century Schoolbook, 'Times New Roman', Times, serif;
+    color: #37474F;
+    font-size: 3rem;
+    font-weight: bold;
+    border-left: 5px solid #1976D2;
+    padding-left: 20px;
+    margin-left: -28px;
+    line-height: 125%;
+}
+
+.particlesub {
+    font-family: Century Schoolbook;
+    color: #455A64;
+    font-size: 1rem;
+    font-weight: 6700;
+}
+
+.ptag {
+    font-family: roboto, sans-serif;
+    color: #1976D2;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.particlebody {
+    font-family: roboto, sans-serif;
+    color: #37474F;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 40px;
+    line-height: 150%;
+}
+
+.pyoumay {
+    font-family: Mont Demo;
+    color: #212121;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.pyoumaysub {
+    font-family: roboto, sans-serif;
+    color: #37474F;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.card:hover  * {
+    background-color: #2962FF;
+    color: white;
+}
+
+.card-title {
+    font-family: roboto, sans-serif;
+    color: #37474F;
+    font-size: 1.1rem;
+}
+
+.card-body {
+    font-family: roboto, sans-serif;
+    color: #263238;
+    font-size: 1rem;
+}
+
+.card-date {
+    font-family: roboto, sans-serif;
+    color: #212121;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.plets {
+	font-family: Mont Demo;
+	font-weight: bold;
+	font-size:35px;
+	color: whitesmoke;
+}
+
+.plets1 {
+	font-family: hind;
+	font-size:14px;
+	color: #eeeeee;
+	width: 50%;
+}
+
+.btnmessage {
+	font-family:hind;
+	font-size: 15px;
+	color: #EEEEEE;
+	background-color: #ff1744;
+	padding:10px 20px;
+	border-radius: 2px;
+	border:0px;
+	cursor: pointer;
+}
+
+.btnmessage:hover {
+	transition: 0.2s;
+	background-color: #F50057;
+}
+
+.confooter {
+	height: 50vh;
+	background-color: transparent;
+	background:  url(../Image/image.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+/* footer */
+
+.footer {
+	background-color: #212121;
+}
+
+.pfootertitle {
+	font-family: hind semibold;
+	font-size: 18px;
+	color: white;
+}
+
+.pfootersub {
+	font-family: hind;
+	font-size: 13px;
+	color: whitesmoke;
+	cursor: pointer;
+	width: max-content;
+}
+
+.pmore {
+    font-family: AvertaStd-Regular;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
