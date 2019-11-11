@@ -31,6 +31,45 @@ body, html {
     }
 }
 
+@media only screen and (max-width: 511px) {
+    .particletitle {
+        font-size: 30px !important;
+    }
+    .particlesub {
+        width: 100% !important;
+        font-size: 15px !important;
+    }
+    .pyoumay {
+        font-size: 30px !important;
+    }
+    .pyoumaysub {
+        visibility: hidden;
+    }
+    .pyoumaysub:after {
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' !important;
+        visibility: visible;
+        display: block;
+        position: absolute;
+        top: 50px;
+    }
+    .card {
+        margin: 0 auto !important;
+        float: none;
+        margin-bottom: 20px !important;
+    }
+    .plets {
+        font-size: 25px !important;
+    }
+    .plets1 {
+        font-size: 15px !important;
+        width: 100% !important;
+    }
+    .divfooterlogo {
+        float: left !important;
+        margin-top: 10px;
+    }
+}
+
 .connavbar {
     background-color: #212121;
 }
@@ -45,16 +84,16 @@ body, html {
     border-bottom: 1px solid;
     margin-top: 10px;
     opacity: 0;
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-      transition: opacity 0.35s, transform 0.35s;
-      -webkit-transform: scale(0,1);
-      transform: scale(0,1);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
 }
 
 .nav-link:hover:after {
     opacity: 1;
-	-webkit-transform: scale(1);
-	transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .pdate {
@@ -114,7 +153,7 @@ body, html {
     margin-top: -10px;
 }
 
-.card:hover  * {
+.card:hover * {
     background-color: #2962FF;
     color: white;
 }
@@ -139,60 +178,61 @@ body, html {
 }
 
 .plets {
-	font-family: Mont Demo;
-	font-weight: bold;
-	font-size:35px;
-	color: whitesmoke;
+    font-family: Mont Demo;
+    font-weight: bold;
+    font-size: 35px;
+    color: whitesmoke;
 }
 
 .plets1 {
-	font-family: hind;
-	font-size:14px;
-	color: #eeeeee;
-	width: 50%;
+    font-family: hind;
+    font-size: 14px;
+    color: #eeeeee;
+    width: 50%;
 }
 
 .btnmessage {
-	font-family:hind;
-	font-size: 15px;
-	color: #EEEEEE;
-	background-color: #ff1744;
-	padding:10px 20px;
-	border-radius: 2px;
-	border:0px;
-	cursor: pointer;
+    font-family: hind;
+    font-size: 15px;
+    color: #EEEEEE;
+    background-color: #ff1744;
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: 0px;
+    cursor: pointer;
 }
 
 .btnmessage:hover {
-	transition: 0.2s;
-	background-color: #F50057;
+    transition: 0.2s;
+    background-color: #F50057;
 }
 
 .confooter {
-	height: 50vh;
-	background-color: transparent;
-	background:  url(../Image/image.png);
-	background-position: center center;
-	background-repeat: no-repeat;
+    height: 50vh;
+    background-color: transparent;
+    background: url(../Image/image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
 }
+
 /* footer */
 
 .footer {
-	background-color: #212121;
+    background-color: #212121;
 }
 
 .pfootertitle {
-	font-family: hind semibold;
-	font-size: 18px;
-	color: white;
+    font-family: hind semibold;
+    font-size: 18px;
+    color: white;
 }
 
 .pfootersub {
-	font-family: hind;
-	font-size: 13px;
-	color: whitesmoke;
-	cursor: pointer;
-	width: max-content;
+    font-family: hind;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
 }
 
 .pmore {
