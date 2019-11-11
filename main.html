@@ -468,6 +468,12 @@
         $('.conloader').addClass("animated fadeOut");
         $('.page1').css("visibility", "visible");
         $(".imgnewsletter").popover('show');
+        if ($(window).width() < 990) {
+            $('.pmainevent').text('Building Powerful Team');
+        }
+        else {
+            $('.pmainevent').text('Building ' < br > ' Powerful Team');
+        }
     }
 
     $(window).resize(function () {
