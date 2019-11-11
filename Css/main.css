@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-
 @font-face {
   font-family: "Mont DEMO";
   src: url("../Font/mont/Mont-HeavyDEMO.otf");
@@ -20,8 +19,6 @@
   src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
 }
 
-
-
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,6 +27,26 @@
 @media only screen and (min-width: 1200px) {
   .con {
     max-width: 1280px !important;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .pmainevent {
+    font-size: 28px !important;
+  }
+  .peventtitle {
+    font-size: 18px !important;
+  }
+  .colart1 {
+    padding: 0 15px;
+  }
+  .pfooter {
+    font-size: 30px !important;
+    margin-top: 20px !important;
+  }
+  .psoltext {
+   display: none !important;
+   font-size: 12px !important;
   }
 }
 
@@ -96,8 +113,30 @@
   .psolutions {
     font-size: 20px !important;
   }
+  .peventlocation {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  .btnexploremore {
+    display: none;
+  }
+  .col2footer {
+    top: 0% !important;
+  }
+  .psoltext {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  .psolutions {
+    font-size: 20px !important;
+  }
 }
-
 
 .center {
   position: absolute;
@@ -186,10 +225,6 @@ html {
 }
 
 /* Optional: show position indicator in red */
-
-::-webkit-scrollbar-thumb {
-  background: #FF0000;
-}
 
 .button_container {
   position: fixed;
@@ -789,12 +824,11 @@ nav ul li:hover a span {
   transition: none !important;
 }
 
-.btn-5,
-.btn-5::after {
+.btn-5, .btn-5::after {
   -webkit-transition: all 0.1s;
-	-moz-transition: all 0.1s;
+  -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
-	transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .btn-5 {
@@ -814,8 +848,7 @@ nav ul li:hover a span {
   margin-top: 20px;
 }
 
-.btn-5::before,
-.btn-5::after {
+.btn-5::before, .btn-5::after {
   background: #fff;
   content: '';
   position: absolute;
@@ -827,9 +860,8 @@ nav ul li:hover a span {
   font-weight: 500;
 }
 
-
-
 /* BUTTON 5 */
+
 .btn-5 {
   overflow: hidden;
 }
@@ -1080,7 +1112,8 @@ nav ul li:hover a span {
 }
 
 .box {
-  background-color: white !important;;
+  background-color: white !important;
+  ;
   border: 1px solid white;
   width: 70px;
   padding: 10px 5px;
@@ -1157,48 +1190,59 @@ ul li {
   width: 1px;
   transition: all 0.2s;
 }
+
 .the-arrow.-left {
   position: absolute;
   top: 60%;
   left: 0;
 }
-.the-arrow.-left > .shaft {
+
+.the-arrow.-left>.shaft {
   width: 0;
   background-color: #fff;
 }
-.the-arrow.-left > .shaft:before, .the-arrow.-left > .shaft:after {
+
+.the-arrow.-left>.shaft:before, .the-arrow.-left>.shaft:after {
   width: 0;
   background-color: #fff;
 }
-.the-arrow.-left > .shaft:before {
+
+.the-arrow.-left>.shaft:before {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
 }
-.the-arrow.-left > .shaft:after {
+
+.the-arrow.-left>.shaft:after {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
 }
+
 .the-arrow.-right {
   top: 1px;
 }
-.the-arrow.-right > .shaft {
+
+.the-arrow.-right>.shaft {
   width: 1px;
   transition-delay: 0.2s;
 }
-.the-arrow.-right > .shaft:before, .the-arrow.-right > .shaft:after {
+
+.the-arrow.-right>.shaft:before, .the-arrow.-right>.shaft:after {
   width: 8px;
   transition-delay: 0.3s;
   transition: all 0.5s;
 }
-.the-arrow.-right > .shaft:before {
+
+.the-arrow.-right>.shaft:before {
   -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  transform: rotate(40deg);
 }
-.the-arrow.-right > .shaft:after {
+
+.the-arrow.-right>.shaft:after {
   -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform: rotate(-40deg);
 }
-.the-arrow > .shaft {
+
+.the-arrow>.shaft {
   background-color: #fff;
   display: block;
   height: 1px;
@@ -1207,7 +1251,8 @@ ul li {
   transition-delay: 0;
   will-change: transform;
 }
-.the-arrow > .shaft:before, .the-arrow > .shaft:after {
+
+.the-arrow>.shaft:before, .the-arrow>.shaft:after {
   background-color: #fff;
   content: '';
   display: block;
@@ -1218,13 +1263,15 @@ ul li {
   transition: all 0.2s;
   transition-delay: 0;
 }
-.the-arrow > .shaft:before {
+
+.the-arrow>.shaft:before {
   -webkit-transform-origin: top right;
-          transform-origin: top right;
+  transform-origin: top right;
 }
-.the-arrow > .shaft:after {
+
+.the-arrow>.shaft:after {
   -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
+  transform-origin: bottom right;
 }
 
 .animated-arrow {
@@ -1236,65 +1283,74 @@ ul li {
   position: relative;
   transition: all 0.2s;
 }
+
 .animated-arrow:hover {
   color: #fff;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft {
+
+.animated-arrow:hover>.the-arrow.-left>.shaft {
   width: 64px;
   transition-delay: 0.1s;
   background-color: #fff;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:before, .animated-arrow:hover > .the-arrow.-left > .shaft:after {
+
+.animated-arrow:hover>.the-arrow.-left>.shaft:before, .animated-arrow:hover>.the-arrow.-left>.shaft:after {
   width: 8px;
   transition-delay: 0.1s;
   background-color: #fff;
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:before {
+
+.animated-arrow:hover>.the-arrow.-left>.shaft:before {
   -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  transform: rotate(40deg);
 }
-.animated-arrow:hover > .the-arrow.-left > .shaft:after {
+
+.animated-arrow:hover>.the-arrow.-left>.shaft:after {
   -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+  transform: rotate(-40deg);
 }
-.animated-arrow:hover > .main {
+
+.animated-arrow:hover>.main {
   -webkit-transform: translateX(17px);
-          transform: translateX(17px);
+  transform: translateX(17px);
   -webkit-transform: translateX(80px);
-          transform: translateX(80px);
+  transform: translateX(80px);
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft {
+
+.animated-arrow:hover>.main>.the-arrow.-right>.shaft {
   width: 0;
   -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  transform: translateX(200%);
   transition-delay: 0;
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before, .animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+
+.animated-arrow:hover>.main>.the-arrow.-right>.shaft:before, .animated-arrow:hover>.main>.the-arrow.-right>.shaft:after {
   width: 0;
   transition-delay: 0;
   transition: all 0.1s;
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:before {
+
+.animated-arrow:hover>.main>.the-arrow.-right>.shaft:before {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
 }
-.animated-arrow:hover > .main > .the-arrow.-right > .shaft:after {
+
+.animated-arrow:hover>.main>.the-arrow.-right>.shaft:after {
   -webkit-transform: rotate(0);
-          transform: rotate(0);
+  transform: rotate(0);
 }
-.animated-arrow > .main {
+
+.animated-arrow>.main {
   display: flex;
   align-items: center;
   transition: all 0.2s;
 }
-.animated-arrow > .main > .text {
+
+.animated-arrow>.main>.text {
   margin: 0 16px 0 0;
   line-height: 1;
 }
-.animated-arrow > .main > .the-arrow {
+
+.animated-arrow>.main>.the-arrow {
   position: relative;
 }
-
-
-
-
