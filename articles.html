@@ -13,6 +13,7 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src='Script\bootstrap.min.js'></script>
+    <script src="Script\visible.js"></script>
     <title>Document</title>
 </head>
 
@@ -24,33 +25,31 @@
         </a>
     </div>
 
-    <div class="divlogo">
-        <img src="Image/output-onlinepngtools.png" class="img-fluid" style="width: 120px;">
-    </div>
-
-    <div class="divlogofooter form-inline">
-        <img src="Image/envelope.png" class="img-fluid imgnewsletter"
-            style="width: 20px;margin-right: 20px;cursor:pointer;" data-container="body" data-toggle="popover"
-            data-placement="top" data-content="Subscribe to our newsletter!">
-        <div class="horizontal">
-
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding-top: 20px;transition: all 0.2s;">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="navbar-brand" href="#">
+            <a href="#"><img src="Image/output-onlinepngtools.png" class="img-fluid imglogo"
+                    style="width: 170px;padding-left: 25px;transition: all 0.2s;"></a>
+        </nav>
+        <div class="collapse navbar-collapse" id="collapse">
+            <div class="ml-auto">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav-link btnhome" href = "main.html#page-1" style="color:white;">HOME</a></li>
+                    <li><a class="nav-link btnevents" href = "main.html#page-2" style="color:white;">EVENTS</a>
+                    </li>
+                    <li><a class="nav-link btnarticles" href = "main.html#page-3" style="color:white;">ARTICLES</a></li>
+                    <li><a class="nav-link btnabout" href = "main.html#page-4" style="color:white;">ABOUT</a></li>
+                    <li><a class="nav-link btnsolutions" href = "solutions.html" style="color:white;">SOLUTIONS</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <img src="Image/facebook-logo.png" class="img-fluid" style="width: 18px;margin-right: 20px;">
-        <img src="Image/twitter.png" class="img-fluid" style="width: 18px;margin-right: 20px;">
-        <img src="Image/linkedin-logo.png" class="img-fluid" style="width: 18px">
-    </div>
-
-    <div class="anchors">
-        <ul>
-            <li><a href="#page-1" class="navibar">HOME</a></li>
-            <li><a href="#page-2" class="navibar">SOLUTIONS</a></li>
-            <li><a href="#page-3" class="navibar">TRAININGS</a></li>
-            <li><a href="#page-6" class="navibar">ABOUT</a></li>
-        </ul>
-    </div>
+    </nav>
 
     <div class="container-fluid h-100 maincontainer" id="maincontainer" style="transition: background 1s linear;">
-        <div class="container con h-100">
+        <div class="container con h-100 conPage1">
             <div class="row h-100 align-items-center">
                 <div class="col-lg-8">
                     <p class="particle">Article</p>
@@ -292,6 +291,17 @@
         document.getElementById("maincontainer").style.background = "linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(Image/articlebg1.jpg)";
         document.getElementById("maincontainer").style.backgroundSize = "cover";
 
+    });
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll < 50) {
+            $('.navbar').attr('style','background-color: transparent !important');
+            $('.nav-link').css({"color": 'white', "margin-top": '20px'});
+        } else {
+            $('.navbar').attr('style','background-color: #212121 !important');
+            $('.nav-link').css({"color": 'white', "margin-top": '20px'});
+        }
     });
 </script>
 

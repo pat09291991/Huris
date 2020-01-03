@@ -22,9 +22,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <script src="Script\pageable.min.js"></script>
+    <script src="Script\visible.js"></script>
 </head>
 
-<body>
+<body onscroll="checkVisible()">
     <div class="container-fluid h-100 conloader">
         <div class="center">
             <span class="span"></span>
@@ -57,12 +58,12 @@
 
 
     <div class="anchors">
-        <ul>
-            <li><a href="#page-1" class="navibar">HOME</a></li>
-            <li><a href="#page-2" class="navibar">EVENTS</a></li>
-            <li><a href="#page-3" class="navibar">ARTICLES</a></li>
-            <li><a href="#page-4" class="navibar">ABOUT</a></li>
-            <li><a href="#page-5" class="navibar">SOLUTIONS</a></li>
+        <ul class="form-inline">
+            <li><a href="#page-1" class="navibar nav1">HOME</a></li>
+            <li><a href="#page-2" class="navibar nav2">EVENTS</a></li>
+            <li><a href="#page-3" class="navibar nav3">ARTICLES</a></li>
+            <li><a href="#page-4" class="navibar nav4">ABOUT</a></li>
+            <li><a href="#page-5" class="navibar nav5">SOLUTIONS</a></li>
         </ul>
     </div>
 
@@ -113,7 +114,7 @@
 
     <main>
         <section data-anchor="page 1" class="page1" style="visibility: hidden;">
-            <div class="container-fluid h-100">
+            <div class="container-fluid h-100 conPage1">
                 <div class="row h-100 align-items-center justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="content text-center" style="margin-left: 20px;">
@@ -130,7 +131,7 @@
             </div>
         </section>
         <section data-anchor="page 2">
-            <div class="container con h-100">
+            <div class="container con h-100 conPage2">
                 <div class="row h-100 align-items-center colart1">
                     <div class="col-lg-6 col-md-6">
                         <p class="pmaintitle">&#x2014; CESB Accredited Leadership Program</p>
@@ -221,7 +222,7 @@
             </div>
         </section>
         <section data-anchor="page 3">
-            <div class="container-fluid h-100">
+            <div class="container-fluid h-100 conPage3">
                 <div class="row h-100 justify-content-center align-items-center">
                     <div class="col-lg-4 col-md-4 h-100" style="padding: 0px !important;">
                         <div class="outer-div">
@@ -269,7 +270,7 @@
             </div>
         </section>
         <section data-anchor="page 4">
-            <div class="container h-100">
+            <div class="container h-100 conPage4">
                 <div class="row h-100 align-items-center">
                     <div class="col-lg-6 col-md-6 col-sm-12 colart1">
                         <p class="pfooter">Let's do<br>something<br>awesome today</p>
@@ -290,7 +291,7 @@
             </div>
         </section>
         <section data-anchor="page 5">
-            <div class="container h-100 con">
+            <div class="container h-100 con conPage5">
                 <div class="row h-100 align-items-center" style="padding: 0px 15px;display:none !important;">
                     <div class="row">
                         <div class="col-lg-12 col-12 col-sm-12 col-md-12">
@@ -367,7 +368,6 @@
     const pageable = new Pageable("main", {
         freeScroll: true,
         swipeThreshold: 200,
-        infinite: true,
         onBeforeStart: function () {
             $('.colart1').removeClass("animated fadeInUp");
             $('.colart2').removeClass("animated fadeInUp");
@@ -381,7 +381,36 @@
             $('.colart3').removeClass("animated fadeInUp");
             $('.colart3').addClass("animated fadeInUp faster");
 
-        },
+            if ($('.conPage1').visible(true)) {
+                $('.nav1').attr('style','color: #1565C0');
+            } else {
+                $('.nav1').attr('style','color: white !important');
+            }
+
+            if ($('.conPage2').visible(true)) {
+                $('.nav2').attr('style','color: #1565C0');
+            } else {
+                $('.nav2').attr('style','color: white !important');
+            }
+
+            if ($('.conPage3').visible(true)) {
+                $('.nav3').attr('style','color: #1565C0');
+            } else {
+                $('.nav3').attr('style','color: white !important');
+            }
+
+            if ($('.conPage4').visible(true)) {
+                $('.nav4').attr('style','color: #1565C0');
+            } else {
+                $('.nav4').attr('style','color: white !important');
+            }
+
+            if ($('.conPage5').visible(true)) {
+                $('.nav5').attr('style','color: #1565C0');
+            } else {
+                $('.nav5').attr('style','color: white !important');
+            }
+        }
     });
 
     $(function () {
@@ -484,6 +513,8 @@
             $('.pmainevent').text('Building ' < br > ' Powerful Team');
         }
     });
+
+
 </script>
 
 </html>

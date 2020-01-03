@@ -308,43 +308,27 @@ html {
   top: 40px;
   right: 50px;
   z-index: 100;
-  text-align: center;
-}
-
-.anchors ul {
-  margin: 0;
-  padding: 0;
-  text-align: center !important;
+  width: max-content;
 }
 
 .anchors ul li {
-  float: left;
   list-style: none;
-  text-align: center !important;
+  padding-right: 20px !important;
 }
 
 .anchors ul li a {
   font-family: roboto;
   font-weight: bold;
-  padding: 12px;
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
   position: relative;
-  width: max-content;
   margin-left: 20px;
+  width: max-content;
   text-align: center !important;
+
 }
 
-.anchors ul li a.active::after {
-  position: absolute;
-  bottom: 0px;
-  left: 10%;
-  width: 80%;
-  height: 3px;
-  background-color: rgba(255, 255, 255, 0.6);
-  content: "";
-}
 
 .overlay {
   position: fixed;
@@ -473,12 +457,13 @@ html {
   width: 0;
   height: 2px;
   background: white;
-  transition: #ffffff .3s;
+  transition: #ffffff .2s;
+  text-align: center;
 }
 
 .navibar:hover::after {
   width: 100%;
-  transition: width .3s;
+  transition: width .2s;
 }
 
 .icon-scroll, .icon-scroll:before {
@@ -541,7 +526,7 @@ html {
 }
 
 #page-1 {
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../Image/bg2.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Image/newbg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
