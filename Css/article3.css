@@ -30,7 +30,7 @@ body, html {
         max-width: 1360px !important;
     }
     .context {
-        max-width: 850px;
+        max-width: 800px;
     }
 }
 
@@ -97,8 +97,9 @@ body, html {
 .pContext {
     font-family: roboto, sans-serif;
     font-size: 1rem;
-    color: #757575;
+    color: #616161;
     margin-top: 35px;
+    font-weight: 500;
 }
 
 .subhead:first-child:first-letter {
@@ -110,4 +111,51 @@ body, html {
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
+}
+
+.pSubTitle {
+    font-family: roboto, sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #212121;
+    line-height: 138%;
+}
+
+.pImageDescription {
+    font-family: roboto, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+    margin-top: 15px;
+}
+
+.arrowLeft,.arrowRight {
+    font-size: 1.7rem;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.arrowLeft:hover, .arrowRight:hover {
+    color: #212121;
+}
+
+.imgSocial {
+    margin-right: 0px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 38px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pMore {
+    font-size: 1.2rem;
+    color: gray;
+    cursor: pointer;
+    transition: all 0.2s;
 }
