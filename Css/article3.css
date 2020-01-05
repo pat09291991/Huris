@@ -154,8 +154,111 @@ body, html {
 }
 
 .pMore {
-    font-size: 1.2rem;
-    color: gray;
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
+    margin-top: 70px;
+}
+
+.conStories {
+    background-color: #202124;
+}
+
+.spanLeft {
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.spanLeft:hover {
+    color: #00acee;
+}
+
+.pMoreTitle {
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pMoreTitleSub {
+    font-family: roboto, sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top:-5px;
+}
+
+.pMoreAuthor {
+    font-family: roboto, sans-serif;
+    font-size: 0.9rem;
+    color: #616161;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top:5px;
+    font-style: italic;
+}
+
+.footer {
+    background-color: #202124;
+}
+
+.pfootertitle {
+    font-family: roboto,sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: roboto, sans-serif;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+.pmore {
+    font-family: roboto, sans-serif;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.lblTag {
+    font-family: roboto, sans-serif;
+    font-size: 1rem;
+    color: #616161;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+    border: 1px solid #BDBDBD;
+    margin: 5px;
+    padding: 15px;
+}
+
+.lblTag:hover {
+    color: white;
+    background-color: #212121;
 }
