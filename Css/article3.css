@@ -129,7 +129,7 @@ body, html {
     margin-top: 15px;
 }
 
-.arrowLeft,.arrowRight {
+.arrowLeft, .arrowRight {
     font-size: 1.7rem;
     color: gray;
     cursor: pointer;
@@ -190,10 +190,10 @@ body, html {
 .pMoreTitleSub {
     font-family: roboto, sans-serif;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     transition: all 0.2s;
-    margin-top:-5px;
+    margin-top: -5px;
 }
 
 .pMoreAuthor {
@@ -202,7 +202,7 @@ body, html {
     color: #616161;
     cursor: pointer;
     transition: all 0.2s;
-    margin-top:5px;
+    margin-top: 5px;
     font-style: italic;
 }
 
@@ -211,7 +211,7 @@ body, html {
 }
 
 .pfootertitle {
-    font-family: roboto,sans-serif;
+    font-family: roboto, sans-serif;
     font-size: 18px;
     color: white;
 }
@@ -261,4 +261,19 @@ body, html {
 .lblTag:hover {
     color: white;
     background-color: #212121;
+}
+
+.pAuthorFooter {
+    font-family: roboto, sans-serif;
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.pAuthorFooterDesc {
+    font-family: roboto, sans-serif;
+    color: gray;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: -10px;
 }

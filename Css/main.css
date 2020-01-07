@@ -45,8 +45,8 @@
     margin-top: 20px !important;
   }
   .psoltext {
-   display: none !important;
-   font-size: 12px !important;
+    display: none !important;
+    font-size: 12px !important;
   }
 }
 
@@ -326,9 +326,7 @@ html {
   margin-left: 20px;
   width: max-content;
   text-align: center !important;
-
 }
-
 
 .overlay {
   position: fixed;
@@ -547,6 +545,19 @@ html {
   background-position: center;
   transition: all 0.5s ease;
   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../Image/bg2.jpg);
+  cursor: pointer;
+}
+
+.inner-div:hover * {
+  cursor: pointer;
+}
+
+.inner-div1:hover * {
+  cursor: pointer;
+}
+
+.inner-div2:hover * {
+  cursor: pointer;
 }
 
 .inner-div:hover {
@@ -554,6 +565,18 @@ html {
   background-size: cover;
   background-position: center;
   background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Image/bg2.jpg);
+}
+
+.inner-div:hover .colart1>.particletitle1 {
+  color: #1976D2;
+}
+
+.inner-div1:hover .colart2>.particletitle1 {
+  color: #1976D2;
+}
+
+.inner-div2:hover .colart3>.particletitle1 {
+  color: #1976D2;
 }
 
 .outer-div1 {
@@ -654,15 +677,74 @@ html {
 }
 
 #page-5 {
-  background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../Image/solution.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../Image/solution.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.2s;
 }
 
-#page-6 {
-  background-color: #4CAF50;
+.pSolutions {
+  font-family: AvertaStd-Regular;
+  color: white;
+  font-size: 67px;
+  font-weight: bold;
+  line-height: 115%;
+}
+
+.pSolutionsDesc {
+  font-family: AvertaStd-Regular;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 125%;
+  width: 50%;
+}
+
+.card-title-solutions {
+  font-family: AvertaStd-Regular;
+  color: #212121;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 115%;
+}
+
+.card-text-solutions {
+  font-family: AvertaStd-Regular;
+  color: #757575 !important;
+  font-size: 1rem;
+  line-height: 115%;
+}
+
+.card-text>.text-muted {
+  font-family: AvertaStd-Regular;
+  color: #212121 !important;
+  font-size: 0.9rem;
+  line-height: 115%;
+}
+
+.pSolutionsTitle {
+  font-family: AvertaStd-Regular;
+  color: #212121;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 115%;
+}
+
+.pSolutionsTitleDesc {
+  font-family: AvertaStd-Regular;
+  color: #212121;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.link {
+  font-family: AvertaStd-Regular;
+  color: #212121;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 120%
 }
 
 nav {
@@ -1113,6 +1195,15 @@ nav ul li:hover a span {
   margin-bottom: 0px;
 }
 
+.colEvent1, .colEvent2, .colEvent3 {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.colEvent1:hover>.peventtitle, .colEvent2:hover, .colEvent3:hover {
+  color: #1976D2;
+}
+
 .peventtitle {
   font-family: AvertaStd-Regular;
   color: white;
@@ -1339,3 +1430,57 @@ ul li {
 .animated-arrow>.main>.the-arrow {
   position: relative;
 }
+
+.inner-div1-1, .inner-div1-2, .inner-div1-3 {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  background: #0f4c81;
+}
+
+.btnexplore {
+  font-family: AvertaStd-Regular;
+  color: white;
+  background-color: rgba(15,76,129, 0.9);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 120%;
+  border-radius: 20px;
+  border: 0px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.inner-div-1 {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s ease;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../Image/bg2.jpg);
+  cursor: pointer;
+}
+
+.inner-div-1:hover {
+  transform: scale(1.1);
+  background-size: cover;
+  background-position: center;
+  background: #0f4c81;
+}
+
+.cardSolution1, .cardSolution2, .cardSolution3 {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cardSolution1:hover * , .cardSolution2:hover * , .cardSolution3:hover * {
+  color: white !important;
+}
+
+.cardSolution1:hover , .cardSolution2:hover , .cardSolution3:hover   {
+  background-color: #0f4c81;
+}
+
