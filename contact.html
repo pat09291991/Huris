@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contact Us - Huris</title>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/contact.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/dist/backdrop.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/minibarjs@latest/dist/minibar.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+    <div class="anchors">
+        <ul class="form-inline">
+            <li><a href="#page-1" class="navibar nav1">HOME</a></li>
+            <li><a href="#page-2" class="navibar nav2">EVENTS</a></li>
+            <li><a href="#page-3" class="navibar nav3">ARTICLES</a></li>
+            <li><a href="#page-4" class="navibar nav4">ABOUT</a></li>
+            <li><a href="#page-5" class="navibar nav5">SOLUTIONS</a></li>
+        </ul>
+    </div>
+
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
+
+
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li style="width: 100% !important;"><a href="#">Home</a></li>
+                <li style="width: 100% !important;"><a href="#">Solutions</a></li>
+                <li style="width: 100% !important;"><a href="#">Trainings</a></li>
+                <li style="width: 100% !important;"><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container-fluid h-100 conBg">
+        <div class="row h-100 align-items-center text-centr">
+            <div class="col-lg-6 text-center">
+                <p class="pLets">Let's work together</p>
+                <p class="pLetsSub">Fill out the inquiry form and we'll get back to you soon as possile.</p>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="text" class="txtFullname float-right" placeholder="First name">
+                        <input type="text" class="txtPhone float-right" placeholder="Phone number">
+                        <input type="text" class="txtCompany float-right" placeholder="Company name">
+                    </div>
+                    <div class="col-lg-6">
+                        <input type="text" class="txtEmail float-left" placeholder="Email address">
+                        <input type="text" class="txtsubject float-left" placeholder="Subject">
+                        <input type="text" class="txtPosition float-left" placeholder="Position">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <textarea rows="4" class="text-left" placeholder="Enter your message here"></textarea><br>
+                        <button class="btn-5" style="z-index: 999999999999999;">Send Message</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center h-100" style = "padding: 0px;">
+                <div id="mapid">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var mymap = L.map('mapid').setView([14.5720706,121.0606402], 16);
+
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+        maxZoom: 19,
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012',
+        id: 'mapbox.streets',
+        subdomains: 'abcd'
+    }).addTo(mymap);
+
+    L.marker([14.5720706,121.0606402]).addTo(mymap)
+        .bindPopup("Huris main office").openPopup();
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+</script>
+
+</html>
