@@ -137,11 +137,20 @@
     font-size: 20px !important;
   }
   .pSolutions {
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
+    margin-top: 10px !important;
   }
   .pSolutionsDesc {
     width: 100% !important;
-    
+  }
+  .imgSolution1, .imgSolution2, .imgSolution3 {
+    display: none !important;
+  }
+  .btnexplore {
+    display: none !important;
+  }
+  .cardSolution1, .cardSolution2, .cardSolution3 {
+    padding: 0px !important;
   }
 }
 

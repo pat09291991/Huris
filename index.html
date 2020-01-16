@@ -298,8 +298,8 @@
             </div>
         </section>
         <section data-anchor="page 5">
-            <div class="container  conPage5">
-                <div class="row  align-items-center">
+            <div class="container h-100 conPage5">
+                <div class="row h-100 align-items-center">
                     <div class="col-lg-12 colart1 text-center">
                         <p class="pSolutions">Our Solutions</p>
                         <label class="pSolutionsDesc" style="padding-bottom: 20px;">Lorem ipsum dolor sit amet,
@@ -421,6 +421,7 @@
             $('.colart1').removeClass("animated fadeInUp");
             $('.colart2').removeClass("animated fadeInUp");
             $('.colart3').removeClass("animated fadeInUp");
+            $(".imgnewsletter").popover('dispose');
         },
         onFinish: function () {
             $('.colart1').removeClass("animated fadeInUp");
@@ -471,8 +472,6 @@
     })
 
     $(function () {
-
-
         $(".imgnewsletter").on('click', function () {
             $(".imgnewsletter").popover('dispose');
             $('#exampleModal').modal('show');
