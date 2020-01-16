@@ -34,6 +34,58 @@ body, html {
     }
 }
 
+@media only screen and (max-width: 510px) {
+    .pTitle {
+        font-size: 1.5rem !important;
+    }
+    .pTitleSub {
+        font-size: 0.9rem !important;
+    }
+    .divAuthor {
+        margin-top: 10px !important;
+    }
+    .imgPic {
+        margin-top: 30px !important;
+    }
+    .context {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .pContext {
+        width: 100% !important;
+    }
+    .spanArrow {
+        float: none !important;
+        float: left !important;
+    }
+    .rowAuthor {
+        align-items: center !important;
+        padding: 0px !important;
+    }
+    .colAuthor {
+        text-align: center;
+        margin: 0px !important;
+    }
+    .imgAuthor {
+        margin-top: 10px !important;
+    }
+    .conAuthor {
+        padding: 0px !important;
+        padding-top: 1px !important;
+        margin: 0px !important;
+    }
+    .pAuthorFooter {
+        width: 100% !important;
+        text-align: center !important;
+    }
+    .pAuthorFooterDesc {
+        padding: 10px !important;
+    }
+    .colMoreStories {
+        padding: 0px !important;
+    }
+}
+
 .connavbar {
     background-color: #212121;
 }

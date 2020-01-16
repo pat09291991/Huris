@@ -41,8 +41,8 @@
         </nav>
     </div>
 
-    <div class="container-fluid h-100 conBg">
-        <div class="row h-100 align-items-center text-centr">
+    <div class="container-fluid h-100 conBg conh100">
+        <div class="row h-100 conh100 align-items-center text-centr">
             <div class="col-lg-6 col-md-12 text-center mx-auto">
                 <p class="pLets">Let's work together</p>
                 <p class="pLetsSub">Fill out the inquiry form and we'll get back to you soon as possile.</p>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 text-center h-100" style = "padding: 0px;">
+            <div class="col-lg-6 text-center h-100" style="padding: 0px;">
                 <div id="mapid">
 
                 </div>
@@ -75,7 +75,7 @@
     </div>
 </body>
 <script>
-    var mymap = L.map('mapid').setView([14.5720706,121.0606402], 16);
+    var mymap = L.map('mapid').setView([14.5720706, 121.0606402], 16);
 
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
         maxZoom: 19,
@@ -84,7 +84,7 @@
         subdomains: 'abcd'
     }).addTo(mymap);
 
-    L.marker([14.5720706,121.0606402]).addTo(mymap)
+    L.marker([14.5720706, 121.0606402]).addTo(mymap)
         .bindPopup("Huris main office").openPopup();
 
 
@@ -96,6 +96,13 @@
 
 
     var popup = L.popup();
+
+    
+    if ($(window).width() < 750) {
+        $('.conh100').removeClass('h-100');
+    } else {
+        $('.conh100').addClass('h-100');
+    }
 </script>
 
 </html>

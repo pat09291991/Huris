@@ -34,11 +34,16 @@
     input[type="text"] {
         float: none !important;
     }
-    body , html {
+    body, html {
         overflow: scroll !important;
     }
 }
 
+@media only screen and (max-width: 510px) {
+    .pLets {
+        font-size: 1rem !important;
+    }
+}
 
 body, html {
     font-family: "Roboto Mono";
