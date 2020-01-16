@@ -19,7 +19,7 @@
   src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
 }
 
-* {
+* { 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -135,6 +135,13 @@
   }
   .psolutions {
     font-size: 20px !important;
+  }
+  .pSolutions {
+    font-size: 1.4rem !important;
+  }
+  .pSolutionsDesc {
+    width: 100% !important;
+    
   }
 }
 
