@@ -462,7 +462,7 @@ html {
 
 .sel::before {
     position: absolute;
-    content: "&#8595;";
+    content: "↓";
     font-family: Roboto;
     font-size: 0.9rem;
     color: #424242;
