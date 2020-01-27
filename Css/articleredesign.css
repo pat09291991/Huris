@@ -452,22 +452,24 @@ html {
 }
 
 .sel {
+    font-family: Roboto, sans-serif;
+    color: #212121;
     font-size: 0.9rem;
     display: inline-block;
-    width: 200px;
+    width: 150px;
     background-color: transparent;
-    position: relative;
     cursor: pointer;
+    position: relative;
 }
 
 .sel::before {
     position: absolute;
     content: "↓";
-    font-family: Roboto;
-    font-size: 0.9rem;
-    color: #424242;
-    right: 20px;
-    top: calc(50% - 0.5em);
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+    color: #212121;
+    right: 5px;
+    top: calc(50% - 0.8em);
 }
 
 .sel.active::before {
@@ -476,14 +478,15 @@ html {
 
 .sel__placeholder {
     display: block;
-    font-family: 'Quicksand';
+    font-family: Roboto, sans-serif;
     font-size: 0.9rem;
-    color: #838e95;
+    color: #212121;
     padding: 0.2em 0.5em;
     text-align: left;
     pointer-events: none;
     user-select: none;
     visibility: visible;
+    left: 0px;
 }
 
 .sel.active .sel__placeholder {
@@ -525,9 +528,9 @@ html {
 
 .sel__box__options {
     display: list-item;
-    font-family: 'Quicksand';
+    font-family: roboto, sans-serif;
     font-size: 0.9rem;
-    color: #838e95;
+    color: #424242;
     padding: 0.5em 1em;
     user-select: none;
 }
@@ -545,24 +548,24 @@ html {
 }
 
 .sel__box__options:hover {
-    background-color: #ebedef;
+    background-color: #0277BD;
 }
 
 
 /* ----- Select Box Black Panther ----- */
 
 .sel {
-    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.sel--black-panther {
+.sel--year {
     z-index: 3;
 }
 
 
 /* ----- Select Box Superman ----- */
 
-.sel--superman {
+.sel--month {
     /*   display: none; */
     z-index: 2;
 }

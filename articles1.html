@@ -108,16 +108,38 @@
             <div class="col-lg-4">
                 <p class="pArticles">ARTICLES</p>
             </div>
-            <div class="col-lg-8">
-                <div class="sel sel--black-panther">
-                    <select name="select-profession" id="select-profession">
-                      <option value="" disabled>Profession</option>
-                      <option value="hacker">Hacker</option>
-                      <option value="gamer">Gamer</option>
-                      <option value="developer">Developer</option>
-                      <option value="programmer">Programmer</option>
-                      <option value="designer">Designer</option>
-                    </select>
+            <div class="col-lg-8" style="position: relative;">
+                <div class="form-inline" style="position:absolute;right: 0px;">
+                    <div class="sel sel--year">
+                        <select name="select-year" id="select-year">
+                          <option value="" disabled>Select Year</option>
+                          <option value="hacker">2020</option>
+                          <option value="gamer">2019</option>
+                          <option value="developer">2018</option>
+                          <option value="programmer">2017</option>
+                          <option value="designer">2016</option>
+                        </select>
+                    </div>
+
+                    <hr class="rule">
+
+                    <div class="sel sel--month" style="margin-left: 10px;">
+                        <select name="select-month" id="select-month">
+                              <option value="" disabled>Select Month</option>
+                              <option value="January">January</option>
+                              <option value="February">February</option>
+                              <option value="March">March</option>
+                              <option value="April">April</option>
+                              <option value="May">May</option>
+                              <option value="June">June</option>
+                              <option value="July">July</option>
+                              <option value="August">August</option>
+                              <option value="September">September</option>
+                              <option value="October">October</option>
+                              <option value="November">November</option>
+                              <option value="December">December</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
