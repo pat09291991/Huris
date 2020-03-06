@@ -1,0 +1,408 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+}
+
+.connavbar {
+    background-color: white;
+}
+
+.nav-link:hover {
+    color: #0f4c81 !important;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid #0f4c81;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.pFeatured {
+    font-family: Poppins, sans-serif;
+    color: #212121;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.divEventBg {
+    height: 450px !important;
+    max-height: 450px !important;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventlanding.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hrCarousel {
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.pEventTitle {
+    font-family: Neuton, Poppins, sans-serif;
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1em;
+    margin-top: -10px;
+    animation-delay: 0.5s;
+}
+
+.imgProfCarousel {
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.pEventSubTitle {
+    font-family: Neuton,Poppins,sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: -10px;
+    animation-delay: 1s;
+}
+
+.pEventsTitleSub {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.pDateTime {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -5px;
+    animation-delay: 1s;
+}
+
+.btnContactUs {
+    font-family: Poppins, sans-serif;
+    color: #0f4c81;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 10px;
+    animation-delay: 1.5s;
+}
+
+.btnBuyTickets {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: #0f4c81;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+    animation-delay: 1.5s;
+}
+
+.btnBuyTickets:hover {
+    background-color: white;
+    color: #0f4c81;
+    border: #0f4c81;
+}
+
+.btnContactUs:hover {
+    background-color: #0f4c81;
+    color: white;
+    border: white;
+}
+
+.carousel-item {
+    height: 500px !important;
+}
+
+.carousel1 {
+    height: 550px;
+    max-height: 550px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/articlebg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel2 {
+    height: 550px;
+    max-height: 550px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventsamples.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel3 {
+    height: 550px;
+    max-height: 550px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/event.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* IE support */
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+    position: absolute !important;
+}
+
+.pAuthor {
+    font-family: Poppins, sans-serif;
+    color: white !important;
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.pDate {
+    font-family: Poppins, sans-serif;
+    color: white !important;
+    font-size: 0.9rem;
+}
+
+.pSubscribe {
+    font-family: Poppins, sans-serif;
+    color: #212121;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.txtnewsletter {
+    font-family: Poppins, sans-serif;
+    color: gray;
+    font-size: 0.9rem;
+    border-radius: 0px;
+    border: 1px solid #E0E0E0;
+    background-color: #f6f6f6;
+    padding: 8px 10px;
+    transition: all 0.2s;
+}
+
+.txtnewsletter:focus {
+    border: 1px solid #3c8cc3;
+}
+
+.btnSubscribe {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    background-color: #3c8cc3;
+    border: 0px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    width: 140px;
+    margin-top: 20px;
+    box-shadow: 0 2px 16px -6px #3c8cc3 !important;
+    cursor: pointer;
+}
+
+.pFollow {
+    font-family: Poppins, sans-serif;
+    color: #212121;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pCategories {
+    font-family: Poppins, sans-serif;
+    color: #424242;
+    font-size: 0.8rem;
+    margin-top: -5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pCategories:hover {
+    color: #3c8cc3;
+}
+
+.pTags {
+    font-family: Poppins, sans-serif;
+    color: #424242;
+    font-size: 0.8rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pTags:hover {
+    color: #3c8cc3;
+}
+
+.pTagsCard {
+    font-family: Poppins, sans-serif;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.pTitleCard {
+    font-family: Poppins, sans-serif;
+    color: #212121;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.pCardDesc {
+    font-family: Poppins, sans-serif;
+    color: #424242;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 0px;
+}
+
+.pAuthor {
+    font-family: Poppins, sans-serif;
+    color: #212121;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.pDate {
+    font-family: Poppins, sans-serif;
+    color: #424242;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: .5rem;
+}
+
+.card {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    border: 2px solid #3c8cc3;
+    box-shadow: 0 2px 16px -6px #3c8cc3 !important;
+}
+
+.footer {
+    margin-top: 40px;
+    background-color: #212121;
+}
+
+.pfootertitle {
+    font-family: hind semibold;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: hind;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+.pmore {
+    font-family: AvertaStd-Regular;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btnLoadMore {
+    font-family: Poppins, sans-serif;
+    color: #0f4c81;
+    background-color: white;
+    padding: 12px 10px;
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 40px;
+}
+
+.btnLoadMore:hover {
+    background-color: #0f4c81;
+    color: white;
+}
+
+.imgProf {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.pAuthorCard {
+    font-family: Poppins,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #424242;
+    margin-left: 10px;
+}
+
+.pDateCard {
+    color: #727272;
+    font-weight: 300 !important;
+    margin-left: 10px;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/events.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <meta property="og:url" content="https://codepurse.github.io/Huris/articlesample1.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Evolving Role of the Human Resource Professional" />
+    <meta property="og:description"
+        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+    <meta property="og:image" content="https://codepurse.github.io/Huris/Image/bg.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <title>Events - Huris</title>
+</head>
+
+<body>
+    <div class="container-fluid connavbar">
+        <div class="container con">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-position"
+                style="padding: 15px 0px;background-color: #181818;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/logo.png" class="img-fluid imglogo" style="width: 120px;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnabout"
+                                    style="margin-right: 20px;color:white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="main.html">HOME</a></li>
+                            <li><a class="nav-link btncontact"
+                                    style="margin-right: 20px;color:white ;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal3">EVENTS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:    white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal2">ARTICLES</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal">SOLUTIONS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid divEventBg h-100">
+        <div class="container" style="height: 100%;">
+            <div class="row align-items-center" style="height: 100%;">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <p class="pEventTitle">Strategic Decision Making</p>
+                    <p class="pEventsTitleSub">(CESB Accredited Leadership Program)</p>
+                    <p class="pBy">By: Huris</p>
+                    <p class="pEventDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="form-inline" style="margin-top: -20px;">
+                        <img src="Image/location.png" class="img-fluid" style="width: 20px;">
+                        <p class="pView">View Map</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 colBox">
+                    <div class="box mx-auto">
+                        <p class="pDate">Date and Time</p>
+                        <p class="pTime" style="margin-top: -15px;margin-bottom: 20px;">Monday, February 14, 2019 at
+                            2:30 PM</p>
+                        <button class="btnBook">Book Now (P1000.00)</button>
+                        <button class="btnContact">Contact Us</button>
+                        <p class="pNo">No Refunds</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-bottom: 40px;">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-7" style="padding-right: 80px;">
+                <p class="pTitle">Description</p>
+                <p class="pTitleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="pTitleDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <p class="pTitle" style="margin-top: 40px;">Date and Time</p>
+                <p class="pDateEvent">Date: &nbsp;<span style="color: #212121;">March 12-13, 2020</span></p>
+                <p class="pDateEvent" style="margin-top: -10px;">Time: &nbsp;<span style="color: #212121;">12:30 -
+                        2:00</span></p>
+                <p class="pTitle" style="margin-top: 40px;">How can i contact the event organizer?</p>
+                <p class="pContact">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
+            <div class="col-lg-5">
+                <p class="pTitle">Event Location</p>
+                <div id="mapid">
+
+                </div>
+                <p class="pLocation">Astoria Plaza Hotel</p>
+                <p class="pAddress">15 Escriva Dr, Ortigas Business District, Pasig, 1600 Metro Manila</p>
+                <p class="pTitle">Share With Others</p>
+                <div class="form-inline">
+                    <img src="Image/facebook1.png" class="img-fluid" style="width: 30px;margin-right: 10px;">
+                    <img src="Image/twitter1.png" class="img-fluid" style="width: 30px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #f4f9f9;padding-bottom: 70px;">
+        <div class="container conEvent" style="padding-top: 70px;">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <p class="pTitle">Upcoming Events</p>
+                    <P class="pSaves">SAVE THE DATES</P>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card-deck">
+                        <div class="card" style="background-color: #f4f9f9;border: 0px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-3 text-center" style="margin-top: -10px;">
+                                        <p class="pDay">19</p>
+                                        <p class="pMonth">JUL</p>
+                                    </div>
+                                    <div class="col-lg-7 col-7"
+                                        style="margin-top: 0px;border-left: 1px solid gray;height: 57px;">
+                                        <p class="pTime">12:00 PM - 5:00 PM</p>
+                                        <p class="pEventTitleBox">The Business Savvy HR </p>
+                                        <p class="pEvent">Pasig City</p>
+                                    </div>
+                                    <div class="col-lg-1 col-1 align-self-center">
+                                        <p class="pArrow">&#x2799;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #f4f9f9;border: 0px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-3 text-center" style="margin-top: -10px;">
+                                        <p class="pDay">19</p>
+                                        <p class="pMonth">JUL</p>
+                                    </div>
+                                    <div class="col-lg-7 col-7"
+                                        style="margin-top: 0px;border-left: 1px solid gray;height: 57px;">
+                                        <p class="pTime">12:00 PM - 5:00 PM</p>
+                                        <p class="pEventTitleBox">The Business Savvy HR </p>
+                                        <p class="pEvent">Pasig City</p>
+                                    </div>
+                                    <div class="col-lg-1 col-1 align-self-center">
+                                        <p class="pArrow">&#x2799;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #f4f9f9;border: 0px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-3 text-center" style="margin-top: -10px;">
+                                        <p class="pDay">19</p>
+                                        <p class="pMonth">JUL</p>
+                                    </div>
+                                    <div class="col-lg-7 col-7 colBorder"
+                                        style="margin-top: 0px;border-left: 1px solid gray;height: 57px;">
+                                        <p class="pTime">12:00 PM - 5:00 PM</p>
+                                        <p class="pEventTitleBox">The Business Savvy HR </p>
+                                        <p class="pEvent">Pasig City</p>
+                                    </div>
+                                    <div class="col-lg-1 col-1 align-self-center">
+                                        <p class="pArrow">&#x2799;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" style="background-color: #f4f9f9;border: 0px;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-3 col-3 text-center" style="margin-top: -10px;">
+                                        <p class="pDay">19</p>
+                                        <p class="pMonth">JUL</p>
+                                    </div>
+                                    <div class="col-lg-7 col-7"
+                                        style="margin-top: 0px;border-left: 1px solid gray;height: 57px;">
+                                        <p class="pTime">12:00 PM - 5:00 PM</p>
+                                        <p class="pEventTitleBox">The Business Savvy HR </p>
+                                        <p class="pEvent">Pasig City</p>
+                                    </div>
+                                    <div class="col-lg-1 col-1 align-self-center">
+                                        <p class="pArrow">&#x2799;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer">
+        <div class="container" style="padding-bottom: 20px;">
+            <div class="row">
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">About us</p>
+                    <div class="form-group">
+                        <p class="pfootersub ">Company Profile</p>
+                        <p class="pfootersub">Mission & Vision</p>
+                        <p class="pfootersub">Executive Management</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Solutions</p>
+                    <div class="form-group">
+                        <p class="pfootersub">Strategic Planning</p>
+                        <p class="pfootersub">Executive Coaching</p>
+                        <p class="pfootersub">KPO</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Trainings</p>
+                    <div class="form-group">
+                        <p class="pfootersub">CESB Accredited Programs</p>
+                        <p class="pfootersub">In-house L&D Progams</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Partners</p>
+                    <div class="form-group">
+                        <p class="pfootersub">List of Partners</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Clients</p>
+                    <div class="form-group">
+                        <p class="pfootersub">List of Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Contact us</p>
+                    <div class="form-group">
+                        <p class="pfootersub">Address</p>
+                        <p class="pfootersub">Email us</p>
+                        <p class="pfootersub">Telephone & Social</p>
+                        <p class="pfootersub">Send us a Message</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:40px;">
+                <div class="col-lg-6">
+                    <label style="font-family: hind;font-size:15px;color:white;">Copyright Human Resource Innovations
+                        and Solutions</label>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-inline float-right divfooterlogo">
+                        <img src="Image/facebook-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                        <img src="Image/twitter.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                        <img src="Image/linkedin-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+    var mymap = L.map('mapid').setView([14.5624078, 121.0122034], 16);
+
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        id: 'mapbox.streets'
+    }).addTo(mymap);
+
+    L.marker([14.5624078, 121.0122034]).addTo(mymap)
+        .bindPopup("Event Location").openPopup();
+
+
+    L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(mymap).bindPopup("I am a polygon.");
+
+
+    var popup = L.popup();
+
+    function onMapClick(e) {
+        popup
+            .setLatLng(e.latlng)
+            .setContent("You clicked the map at " + e.latlng.toString())
+            .openOn(mymap);
+    }
+
+    mymap.on('click', onMapClick);
+
+    $(".card").hover(function () {
+        $(this).closest(".colBorder").toggleClass("hovered")
+    });
+</script>
+
+</html>

@@ -1,0 +1,412 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 510px) {
+    .pEventTitle {
+        font-size: 1.5rem !important;
+    }
+    .pEventsTitleSub {
+        font-size: 1.2rem !important;
+    }
+    .pEventDesc {
+        font-size: 0.9rem !important;
+        margin-top: -5px !important;
+    }
+    .pUpcoming {
+        text-align: center;
+    }
+    .select {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+    .divFilter {
+        float: none !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .card {
+        width: auto !important;
+    }
+}
+
+.connavbar {
+    background-color: white;
+}
+
+.nav-link:hover {
+    color: #0f4c81 !important;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid #0f4c81;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.divEventBg {
+    height: 500px;
+    max-height: 500px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventlanding.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pEventTitle {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-top: -10px;
+    animation-delay: 0.5s;
+}
+
+.pEventsTitleSub {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.pDateTime {
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -5px;
+    animation-delay: 1s;
+}
+
+.btnContactUs {
+    font-family: Poppins, sans-serif;
+    color: #0f4c81;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 10px;
+    animation-delay: 1.5s;
+}
+
+.btnBuyTickets {
+    font-family: Poppins, sans-serif;
+    color: white;
+    background-color: #0f4c81;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 2px;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.2s;
+    animation-delay: 1.5s;
+}
+
+.btnBuyTickets:hover {
+    background-color: white;
+    color: #0f4c81;
+    border: #0f4c81;
+}
+
+.btnContactUs:hover {
+    background-color: #0f4c81;
+    color: white;
+    border: white;
+}
+
+.carousel-item {
+    height: 550px;
+}
+
+.carousel-item img {
+    height: 550px;
+}
+
+.carousel1 {
+    height: 550px;
+    max-height: 550px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventlanding.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel2 {
+    height: 550px;
+    max-height: 550px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventsamples.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel3 {
+    height: 550px;
+    max-height: 550px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/event.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    /* IE support */
+}
+
+.pUpcoming {
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    color: #212121;
+    font-weight: 500;
+}
+
+.dropdown-toggle {
+    font-family: Poppins, sans-serif;
+    font-size: 0.9rem;
+    background-color: rgb(225, 237, 247) !important;
+    color: #212121;
+    border: 0px;
+}
+
+.card {
+    max-height: 280px !important;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    -webkit-box-shadow: 1px 1px 20px -7px #0f4c81 !important;
+    box-shadow: 1px 1px 20px -7px #0f4c81 !important;
+}
+
+.card-title {
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    color: #212121;
+    line-height: 1.4em;
+}
+
+.card-text {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    color: #212121;
+}
+
+.card-place {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    color: #212121;
+    padding: 0px !important;
+}
+
+.lbldate {
+    font-family: Poppins, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #0f4c81;
+}
+
+.card-date {
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    color: #ff1744;
+    margin-top: 2px;
+    padding: 0px !important;
+}
+
+.card-date-num {
+    font-family: Poppins, sans-serif;
+    font-size: 1.9rem;
+    color: #212121;
+    line-height: 1;
+    padding: 0px !important;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: .5rem;
+}
+
+.footer {
+    background-color: #212121;
+}
+
+.pfootertitle {
+    font-family: hind semibold;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: hind;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+.pmore {
+    font-family: AvertaStd-Regular;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card:hover .card-body .row .colBorder:hover {
+    border-left: 1px solid black;
+}
+
+.hovered {
+    border-left: 1px solid #00acee;
+}
+
+.footer {
+    background-color: #212121;
+}
+
+.pfootertitle {
+    font-family: Poppins, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: Poppins, sans-serif;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+select {
+    font-family: Poppins, sans-serif;
+    color: #212121;
+    font-size: 0.9rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #F5F5F5;
+    background-image: none;
+}
+
+/* Remove IE arrow */
+
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select */
+
+.select {
+    font-size: 0.9rem;
+    color: #0f4c81;
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 2.8em;
+    margin-right: 10px;
+    line-height: 2.5;
+    background: #efeff4 !important;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #212121;
+    cursor: pointer;
+}
+
+/* Arrow */
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #efeff4;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+/* Transition */
+
+.select:hover::after {
+    color: #0f4c81;
+}
+
+.btnLoad {
+    font-family: Poppins, sans-serif;
+    color: #0f4c81;
+    background-color: #F5F5F5;
+    padding: 12px 10px;
+    width: 200px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnLoad:hover {
+    background-color: #0f4c81;
+    color: white;
+}

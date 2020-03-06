@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/eventpage.css' rel='stylesheet' type='text/css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src='Script\bootstrap.min.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <title>All Events - Huris</title>
+</head>
+
+<body>
+    <div class="container-fluid connavbar">
+        <div class="container con">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-position"
+                style="padding: 15px 0px;background-color: white !important;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/logoblue.png" class="img-fluid imglogo" style="width: 120px;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnabout"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="main.html">HOME</a></li>
+                            <li><a class="nav-link btncontact"
+                                    style="margin-right: 20px;color:#212121 ;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal3">EVENTS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal2">ARTICLES</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal">SOLUTIONS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal">ABOUT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding: 0px;">
+        <div class="row" style>
+            <div class="col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel1 align-items-center">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-center" style="height: 100%;">
+                                    <div class="col-lg-7">
+                                        <p class="pEventsTitleSub animated fadeInUp fast">CESB Accredited Leadership
+                                            Program
+                                        </p>
+                                        <p class="pEventTitle animated fadeInUp fast">Strategic Decision Making</p>
+                                        <p class="pDateTime animated fadeInUp fast">21 - 12 FEBRUARY, 2019</p>
+                                        <button class="btnContactUs animated fadeInUp fast">CONTACT US</button>
+                                        <button class="btnBuyTickets animated fadeInUp fast">BUY TICKETS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel2">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-center" style="height: 100%;">
+                                    <div class="col-lg-7">
+                                        <p class="pEventsTitleSub animated fadeInUp fast">Leadership Series 2020
+                                        </p>
+                                        <p class="pEventTitle animated fadeInUp fast">Transformational Leadership:
+                                            Leading in a VUCA World</p>
+                                        <p class="pDateTime animated fadeInUp fast">21 - 12 FEBRUARY, 2019</p>
+                                        <button class="btnContactUs animated fadeInUp fast">CONTACT US</button>
+                                        <button class="btnBuyTickets animated fadeInUp fast">BUY TICKETS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel3">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-center" style="height: 100%;">
+                                    <div class="col-lg-7">
+                                        <p class="pEventsTitleSub animated fadeInUp fast">CESB Accredited Leadership
+                                            Programs
+                                        </p>
+                                        <p class="pEventTitle animated fadeInUp fast">Performance and Results Management
+                                        </p>
+                                        <p class="pDateTime animated fadeInUp fast">21 - 12 FEBRUARY, 2019</p>
+                                        <button class="btnContactUs animated fadeInUp fast">CONTACT US</button>
+                                        <button class="btnBuyTickets animated fadeInUp fast">BUY TICKETS</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 70px;">
+            <div class="col-lg-3">
+                <p class="pUpcoming">Upcoming Events</p>
+            </div>
+            <div class="col-lg-9">
+                <div class="form-inline float-right divFilter">
+                    <div class="select">
+                        <select name="slct" id="slct">
+                            <option selected disabled>Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="slct" id="slct">
+                            <option selected disabled>Category</option>
+                            <option value="1">CESB</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="select">
+                        <select name="slct" id="slct">
+                            <option selected disabled>Event Type</option>
+                            <option value="1">Leadership</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12">
+                <div class="card-deck">
+                    <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                box-shadow: 1px 1px 15px -7px #000000;">
+                        <div class="card-body">
+                            <label class="lbldate">Thursday - Friday</label>
+                            <h5 class="card-title">Building Powerful Teams (CESB Accredited Program) <span
+                                    class="badge  badge-primary">Soon</span></h5>
+                            <p class="card-text">Building powerful a powerful team is an essential tool of any
+                                successful
+                                and good company.</p>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                        <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;"> <label
+                                            class="card-place">Astoria Plaza Hotel MNL</label>
+                                    </div>
+                                    <div class="form-group" style="margin-top:-15px;">
+                                        <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                            class="card-place">P14,560 (VAT inclusive)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center align-self-center"
+                                    style="border-left: 1px solid #E0E0E0">
+                                    <p class="card-date">Aug<br><span class="card-date-num">8-9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                box-shadow: 1px 1px 15px -7px #000000;">
+                        <div class="card-body">
+                            <label class="lbldate">Thursday - Friday</label>
+                            <h5 class="card-title">Building Powerful Teams (CESB Accredited Program) <span
+                                    class="badge badge-primary">Soon</span></h5>
+                            <p class="card-text">Building powerful a powerful team is an essential tool of any
+                                successful
+                                and good company.</p>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                        <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;"> <label
+                                            class="card-place">Astoria Plaza Hotel MNL</label>
+                                    </div>
+                                    <div class="form-group" style="margin-top:-15px;">
+                                        <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                            class="card-place">P14,560 (VAT inclusive)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center align-self-center"
+                                    style="border-left: 1px solid #E0E0E0">
+                                    <p class="card-date">Aug<br><span class="card-date-num">8-9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                box-shadow: 1px 1px 15px -7px #000000;">
+                        <div class="card-body">
+                            <label class="lbldate">Thursday - Friday</label>
+                            <h5 class="card-title">Building Powerful Teams (CESB Accredited Program) <span
+                                    class="badge  badge-primary">Soon</span></h5>
+                            <p class="card-text">Building powerful a powerful team is an essential tool of any
+                                successful
+                                and good company.</p>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                        <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;"> <label
+                                            class="card-place">Astoria Plaza Hotel MNL</label>
+                                    </div>
+                                    <div class="form-group" style="margin-top:-15px;">
+                                        <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                            class="card-place">P14,560 (VAT inclusive)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center align-self-center"
+                                    style="border-left: 1px solid #E0E0E0">
+                                    <p class="card-date">Aug<br><span class="card-date-num">8-9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                    box-shadow: 1px 1px 15px -7px #000000;">
+                        <div class="card-body">
+                            <label class="lbldate">Thursday - Friday</label>
+                            <h5 class="card-title">Building Powerful Teams (CESB Accredited Program) <span
+                                    class="badge badge-primary">Soon</span></h5>
+                            <p class="card-text">Building powerful a powerful team is an essential tool of any
+                                successful
+                                and good company.</p>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                        <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;"> <label
+                                            class="card-place">Astoria Plaza Hotel MNL</label>
+                                    </div>
+                                    <div class="form-group" style="margin-top:-15px;">
+                                        <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                            class="card-place">P14,560 (VAT inclusive)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center align-self-center"
+                                    style="border-left: 1px solid #E0E0E0">
+                                    <p class="card-date">Aug<br><span class="card-date-num">8-9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                        box-shadow: 1px 1px 15px -7px #000000;">
+                        <div class="card-body">
+                            <label class="lbldate">Thursday - Friday</label>
+                            <h5 class="card-title">Building Powerful Teams (CESB Accredited Program) <span
+                                    class="badge badge-primary">Soon</span></h5>
+                            <p class="card-text">Building powerful a powerful team is an essential tool of any
+                                successful
+                                and good company.</p>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                        <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;"> <label
+                                            class="card-place">Astoria Plaza Hotel MNL</label>
+                                    </div>
+                                    <div class="form-group" style="margin-top:-15px;">
+                                        <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                            class="card-place">P14,560 (VAT inclusive)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center align-self-center"
+                                    style="border-left: 1px solid #E0E0E0">
+                                    <p class="card-date">Aug<br><span class="card-date-num">8-9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="-webkit-box-shadow: 1px 1px 15px -7px #000000; 
+                            box-shadow: 1px 1px 15px -7px #000000;">
+                        <div class="card-body">
+                            <label class="lbldate">Thursday - Friday</label>
+                            <h5 class="card-title">Building Powerful Teams (CESB Accredited Program) <span
+                                    class="badge  badge-primary">Soon</span></h5>
+                            <p class="card-text">Building powerful a powerful team is an essential tool of any
+                                successful
+                                and good company.</p>
+                            <div class="row" style="margin-top: -10px;">
+                                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                                    <div class="form-group" style="margin-top:10px;padding:0px !important;">
+                                        <img src="Image/placeholder.png" class="img-fluid" style="width: 20px;"> <label
+                                            class="card-place">Astoria Plaza Hotel MNL</label>
+                                    </div>
+                                    <div class="form-group" style="margin-top:-15px;">
+                                        <img src="Image/fees.png" class="img-fluid" style="width: 18px;"> <label
+                                            class="card-place">P14,560 (VAT inclusive)</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-4 text-center align-self-center"
+                                    style="border-left: 1px solid #E0E0E0">
+                                    <p class="card-date">Aug<br><span class="card-date-num">8-9</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-12 text-center">
+                <button class="btnLoad">Load More Events</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer">
+        <div class="container" style="padding-bottom: 20px;margin-top: 70px;">
+            <div class="row">
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">About us</p>
+                    <div class="form-group">
+                        <p class="pfootersub ">Company Profile</p>
+                        <p class="pfootersub">Mission & Vision</p>
+                        <p class="pfootersub">Executive Management</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Solutions</p>
+                    <div class="form-group">
+                        <p class="pfootersub">Strategic Planning</p>
+                        <p class="pfootersub">Executive Coaching</p>
+                        <p class="pfootersub">KPO</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Trainings</p>
+                    <div class="form-group">
+                        <p class="pfootersub">CESB Accredited Programs</p>
+                        <p class="pfootersub">In-house L&D Progams</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Partners</p>
+                    <div class="form-group">
+                        <p class="pfootersub">List of Partners</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Clients</p>
+                    <div class="form-group">
+                        <p class="pfootersub">List of Clients</p>
+                    </div>
+                </div>
+                <div class="col-lg-2" style="padding-top: 70px;">
+                    <p class="pfootertitle">Contact us</p>
+                    <div class="form-group">
+                        <p class="pfootersub">Address</p>
+                        <p class="pfootersub">Email us</p>
+                        <p class="pfootersub">Telephone & Social</p>
+                        <p class="pfootersub">Send us a Message</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:40px;">
+                <div class="col-lg-6">
+                    <label style="font-family: Poppins;font-size:15px;color:white;">Copyright Human Resource Innovations
+                        and Solutions</label>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-inline float-right divfooterlogo">
+                        <img src="Image/facebook-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                        <img src="Image/twitter.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                        <img src="Image/linkedin-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+
+</script>
+
+</html>

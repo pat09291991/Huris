@@ -424,7 +424,6 @@ button {
     position: relative;
     text-transform: uppercase;
     cursor: pointer;
-
 }
 
 button::before, button::after {

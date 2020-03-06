@@ -1,0 +1,442 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: "Mont DEMO";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+    font-family: "hind semibold";
+    src: url("../Font/hind/hind-semibold.otf");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+@media only screen and (max-width: 755px) {
+    .colBox {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .pEventTitle {
+        font-size: 1.5rem !important;
+    }
+    .pEventsTitleSub {
+        font-size: 1.2rem !important;
+    }
+    .pEventDesc {
+        font-size: 0.9rem !important;
+        margin-top: -5px !important;
+    }
+}
+
+.connavbar {
+    background-color: #181818;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.divEventBg {
+    height: 500px;
+    max-height: 500px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.5)), url(../Image/eventsamples.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pEventTitle {
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+.pEventsTitleSub {
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.pBy {
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-left: 2px;
+}
+
+.pEventDesc {
+    font-family: Roboto, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.pView {
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.pView:hover {
+    color: #00acee;
+}
+
+.box {
+    background-color: white;
+    width: 300px;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.pDate {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.pTime {
+    font-family: Roboto, sans-serif;
+    color: #6b7684;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: -12px;
+}
+
+.btnBook {
+    font-family: Roboto, sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    background-color: #1E3056;
+    box-shadow: 0 2px 12px -6px #1E3056 !important;
+    border: 0px;
+    padding: 12px 10px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnContact {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+    font-size: 0.9rem;
+    background-color: #E0E0E0;
+    box-shadow: 0 2px 12px -6px #E0E0E0 !important;
+    border: 0px;
+    font-weight: 500;
+    padding: 12px 10px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+}
+
+.pNo {
+    font-family: Roboto, sans-serif;
+    color: #9E9E9E;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.pTitle {
+    font-family: Catamaran, sans-serif;
+    color: #212121;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.pTitleDesc {
+    font-family: Roboto, sans-serif;
+    color: #757575;
+    font-size: 0.9rem;
+    font-weight: normal;
+    word-spacing: 2px;
+}
+
+#mapid {
+    height: 250px;
+    width: auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 68px -42px rgba(0, 0, 0, 0.75);
+}
+
+.pLocation {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.pAddress {
+    font-family: Roboto, sans-serif;
+    color: #6b7684;
+    font-size: 0.9rem;
+    margin-top: -15px;
+}
+
+.pDateEvent {
+    font-family: Roboto, sans-serif;
+    color: #9E9E9E;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.pContact {
+    font-family: Roboto, sans-serif;
+    color: #757575;
+    font-size: 0.9rem;
+    font-weight: normal;
+    word-spacing: 2px;
+    margin-top: -10px;
+}
+
+.divImage {
+    position: relative;
+}
+
+.conEvent {
+    max-width: 750px !important;
+}
+
+.pDay {
+    font-family: Catamaran, sans-serif;
+    color: #212121;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.pMonth {
+    font-family: Catamaran;
+    color: gray;
+    font-size: 1rem;
+    margin-top: -25px;
+    margin-left: 3px;
+}
+
+.pTime {
+    font-family: Roboto, sans-serif;
+    color: #1E3056;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: -1px;
+}
+
+.pEventTitleBox {
+    font-family: Roboto, sans-serif;
+    color: #212121;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.pEvent {
+    font-family: Roboto, sans-serif;
+    color: gray;
+    font-size: 0.8rem;
+    margin-bottom: -20px;
+}
+
+.pArrow {
+    font-size: 1.4rem;
+}
+
+.card {
+    height: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 15px;
+}
+
+.card:hover {
+    background-color: white !important;
+    -webkit-box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.27);
+}
+
+.card-deck {
+    margin: 0 -15px;
+    justify-content: space-between;
+}
+
+.card-deck .card {
+    margin: 0 0 1rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+        -ms-flex: 0 0 48.7%;
+        flex: 0 0 48.7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-deck .card {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+.pSaves {
+    font-family: Roboto, sans-serif;
+    color: #2196F3;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: -18px;
+}
+
+.footer {
+    background-color: #212121;
+}
+
+.pfootertitle {
+    font-family: hind semibold;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: hind;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+.pmore {
+    font-family: AvertaStd-Regular;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card:hover .card-body .row .colBorder:hover {
+    border-left: 1px solid black;
+}
+
+.hovered {
+    border-left: 1px solid #00acee;
+}
+.footer {
+    background-color: #212121;
+}
+
+.pfootertitle {
+    font-family: hind semibold;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: hind;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+.pmore {
+    font-family: AvertaStd-Regular;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card:hover .card-body .row .colBorder:hover {
+    border-left: 1px solid black;
+}
+
+.hovered {
+    border-left: 1px solid #00acee;
+}
+
