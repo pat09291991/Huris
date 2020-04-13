@@ -465,6 +465,10 @@ html {
   }
 }
 
+.navibar {
+  font-family: Roboto;
+}
+
 .navibar::after {
   content: '';
   display: block;
