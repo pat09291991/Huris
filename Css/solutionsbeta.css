@@ -1,0 +1,143 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: "Mont DEMO";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+    font-family: "hind semibold";
+    src: url("../Font/hind/hind-semibold.otf");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+.connavbar {
+    background-color: #181818;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.pTitle {
+    font-family: Mont DEMO;
+    color: #212121;
+    font-size: 2.5rem;
+}
+
+.pTitle1 {
+    font-family: Poppins;
+    color: #424242;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: -15px;
+}
+
+.box {
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 4px 22px 0px rgba(0, 0, 0, 0.28);
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    position: relative;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.pNumber {
+    font-family: Abril Fatface;
+    color: #e3eefc;
+    font-size: 12rem;
+    position: absolute;
+    top: -140px;
+    right: 25px;
+    z-index: -9;
+}
+
+.pTitleBox {
+    font-family: Roboto;
+    color: #6b8baf;
+    font-weight: 500;
+    position: absolute;
+    bottom: 2px;
+}
+
+.pTop {
+    font-family: Roboto;
+    color: #beccdb;
+    font-size: 2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 2px;
+    right: 20px;
+}
+
+.divSide {
+    background-color:  rgba(255,255,255,0.5);
+    position: relative;
+}
+
+.pTitleSide {
+    font-family: Roboto;
+    color: #003a78;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+}
+
+.pTitleSideSub {
+    font-family: Catamaran;
+    color: #606166;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.btnExplore {
+    font-family: Catamaran;
+    color: white;
+    font-size: 1.2rem;
+    background-color: #638eb8;
+    width: 200px;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0 2px 12px -6px #638eb8 !important;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+

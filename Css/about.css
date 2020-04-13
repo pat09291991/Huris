@@ -1,0 +1,267 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: "Mont DEMO";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+    font-family: "hind semibold";
+    src: url("../Font/hind/hind-semibold.otf");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+.connavbar {
+    background-color: #181818;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.conBg {
+    height: 410px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url(../Image/image-2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    box-shadow: -6px 0 white, 6px 0 white, 0 7px 10px -10px lightgray;
+    z-index: -99999 !important;
+}
+
+.pAbout {
+    font-family: Catamaran;
+    color: white;
+    font-size: 3.3rem;
+    font-weight: 700;
+}
+
+.pHuris {
+    font-family: Catamaran;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: -20px;
+    width: 650px;
+}
+
+.btnContact {
+    font-family: Catamaran;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btnContact:hover {
+    background-color: white;
+    color: #003a78;
+}
+
+.pTitle {
+    font-family: Catamaran;
+    color: #003a78;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.pTitleSub {
+    font-family: Catamaran;
+    color: #424242;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: -15px;
+    text-align: left !important;
+}
+
+.pHeres {
+    font-family: Catamaran;
+    color: #003a78;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.34);
+    min-height: 340px;
+}
+
+.card-title {
+    font-family: Catamaran;
+    color: #003a78;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.divIcon {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.34);
+    width: 110px;
+    padding: 15px;
+    height: 100px;
+    margin-top: -70px;
+    background-color: white;
+}
+
+.pVisionarie {
+    font-family: Catamaran;
+    color: white;
+    font-size: 2rem;
+}
+
+.pName {
+    font-family: Catamaran;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.pPosition {
+    font-family: Catamaran;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-top: -10px;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+
+.imgLinkedin {
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    width: 18px;
+}
+
+.pDesc {
+    font-family: Catamaran;
+    color: #E0E0E0;
+    font-size: 1rem;
+}
+
+.footer {
+    padding-top: 70px;
+    background-color: #212121;
+}
+
+.pfootertitle {
+    font-family: hind semibold;
+    font-size: 18px;
+    color: white;
+}
+
+.pfootersub {
+    font-family: hind;
+    font-size: 13px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: max-content;
+    transition: all 0.2s;
+}
+
+.pfootersub:hover {
+    color: #00acee;
+}
+
+.pmore {
+    font-family: AvertaStd-Regular;
+    color: #263238;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.pshare {
+    font-family: AvertaStd-Regular;
+    color: #2962FF;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btnLoadMore {
+    font-family: Poppins, sans-serif;
+    color: #0f4c81;
+    background-color: white;
+    padding: 12px 10px;
+    width: 200px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 40px;
+}
+
+.btnLoadMore:hover {
+    background-color: #0f4c81;
+    color: white;
+}
+
+.imgProf {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.pAuthorCard {
+    font-family: Poppins,sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #424242;
+    margin-left: 10px;
+}
+
+.pDateCard {
+    color: #727272;
+    font-weight: 300 !important;
+    margin-left: 10px;
+}
