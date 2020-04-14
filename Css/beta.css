@@ -1,0 +1,66 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@font-face {
+    font-family: "Mont DEMO";
+    src: url("../Font/mont/Mont-HeavyDEMO.otf");
+}
+
+@font-face {
+    font-family: "hind";
+    src: url("../Font/hind/hind-regular.otf");
+}
+
+@font-face {
+    font-family: "hind semibold";
+    src: url("../Font/hind/hind-semibold.otf");
+}
+
+@font-face {
+    font-family: "AvertaStd-Regular";
+    src: url("../Font/AvertaStd-Regular/AvertaStd-Regular.ttf");
+}
+
+.connavbar {
+    background-color: white;
+}
+
+.nav-link {
+    color: #212121;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.nav-link:hover:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.conBg {
+    height: 410px;
+    background: linear-gradient( rgba(21, 21, 21, 0.4), rgba(21, 21, 21, 0.4)), url(../Image/articlebg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0px;
+    box-shadow: -6px 0 white, 6px 0 white, 0 7px 10px -10px lightgray;
+    z-index: -99999 !important;
+}
