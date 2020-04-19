@@ -224,7 +224,7 @@ body, html {
     font-family: roboto, sans-serif;
     font-size: 1rem;
     color: #757575;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .pSubTitle1 {
@@ -350,4 +350,11 @@ body, html {
     font-size: 1rem;
     font-weight: bold;
     margin-top: 20px;
+}
+
+.pLi {
+    font-family: Roboto;
+    color: #757575;
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
