@@ -127,7 +127,7 @@
             <div class="col-lg-12">
                 <div class="card-deck">
                     <div class="card">
-                        <a class="btn parentAnimate">
+                        <a class="btn parentAnimate" id="firstTab">
                         <img class="card-img-top mx-auto" src="Image/Sol1.png" alt="Card image cap"
                             style="width: 80px;">
                         <div class="card-body">
@@ -136,7 +136,7 @@
                         </a>
                     </div>
                     <div class="card">
-                        <a class="btn parentAnimate">
+                        <a class="btn parentAnimate" id="secondTab">
                         <img class="card-img-top mx-auto" src="Image/sol2.png" alt="Card image cap"
                             style="width: 80px;">
                         <div class="card-body">
@@ -145,7 +145,7 @@
                         </a>
                     </div>
                     <div class="card">
-                        <a class="btn parentAnimate">
+                        <a class="btn parentAnimate" id="thirdTab">
                         <img class="card-img-top mx-auto" src="Image/sol3.png" alt="Card image cap"
                             style="width: 80px;">
                         <div class="card-body">
@@ -161,48 +161,42 @@
     <div class="container con" id="hideCapsules">
         <div class="row align-items-center">
             <div class="col-lg-7" style="padding-bottom: 70px;padding-top: 70px;">
-                <div class="row" style="margin-top: 20px;">
+                <div class="row putAllText" style="margin-top: 20px;">
                     <div class="col-lg-4" style="width: 100%;">
-                        <div class="btn box contentOrgRes">
-                            <p class="pTop">O</p>
-                            <p class="pTitleBox">Organizational<br>Restructing</p>
-                            <p class="pshowOnAnimate mt-5">Content Shown Here</p>
+                        <div class="btn box contentAllText">
+                            <p class="pTop pChar"></p>
+                            <p class="pTitleBox pTopic"></p>
                         </div>
-                        <div class="btn box contentjobeva" style="background-color: #225992; display: block">
-                            <p class="pTop" style="color: #113257;">J</p>
-                            <p class="pTitleBox" style="color: white;">Job<br>Evaluation</p>
-                            <p class="pshowOnAnimate mt-5">Content Shown Here</p>
+                        <div class="btn box contentAllText" style="background-color: #225992; display: block">
+                            <p class="pTop pChar" style="color: #113257;"></p>
+                            <p class="pTitleBox pTopic" style="color: white;"></p>
                         </div>
                     </div>
                     <div class="col-lg-4" style="width: 100%;margin-top: 40px;">
-                        <div class="btn box contentJobRes" style="background-color: #003a78;">
-                            <p class="pTop" style="color: #618fba;">J</p>
-                            <p class="pTitleBox" style="color: white;">Job<br>Restructing</p>
-                            <p class="pshowOnAnimate mt-5">Content Shown Here</p>
+                        <div class="btn box contentAllText" style="background-color: #003a78;">
+                            <p class="pTop pChar" style="color: #618fba;"></p>
+                            <p class="pTitleBox pTopic" style="color: white;"></p>
                         </div>
-                        <div class="btn box contentComDev">
-                            <p class="pTop">C</p>
-                            <p class="pTitleBox">Competency Developement</p>
-                            <p class="pshowOnAnimate mt-5">Content Shown Here</p>
+                        <div class="btn box contentAllText">
+                            <p class="pTop pChar"></p>
+                            <p class="pTitleBox pTopic">Competency Developement</p>
                         </div>
                     </div>
                     <div class="col-lg-4" style="width: 100%;margin-top: 80px;">
-                        <div class="btn box contentPerMan">
-                            <p class="pTop">P</p>
-                            <p class="pTitleBox">Performance<br>Management</p>
-                            <p class="pshowOnAnimate mt-5">Content Shown Here</p>
+                        <div class="btn box contentAllText">
+                            <p class="pTop pChar"></p>
+                            <p class="pTitleBox pTopic">Performance<br>Management</p>
                         </div>
-                        <div class="btn box contentOrgCha" style="background-color: #225992;">
-                            <p class="pTop" style="color: #113257;">O</p>
-                            <p class="pTitleBox" style="color: white;">Organizational assestment<br>Change management
+                        <div class="btn box contentAllText" style="background-color: #225992;">
+                            <p class="pTop pChar" style="color: #113257;"></p>
+                            <p class="pTitleBox pTopic" style="color: white;">Organizational assestment<br>Change management
                             </p>
-                            <p class="pshowOnAnimate mt-5">Content Shown Here</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5" style="padding-left: 40px;position: relative;padding-top: 40px;">
-                <p class="pNumber">01</p>
+                <p class="pNumber"></p>
                 <div class="divSide">
                     <p class="pTitleSide">Organization developement and solutions.</p>
                     <p class="pTitleSideSub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -308,93 +302,186 @@ $(document).ready(function () {
         }, 2000, function() {
         });
 
+        var checkTabValue = $(this).attr('id');
+        var titlechar = document.getElementsByClassName("pChar");
+        var titletop = document.getElementsByClassName("pTopic");
+        var contentall = document.getElementsByClassName("contentAllText");
+        if(checkTabValue == 'firstTab') {
+            $('.pNumber').text(TITLECHARACTER[0][0])
+            $('.pTitleSide').text(TITLETOPIC[0][0])
+            $('.pTitleSideSub').text(TITLECONTENT[0][0])
+
+            TITLECHARACTER[0].map(function(val, index) {
+                $(titlechar[index]).text(val)
+            })
+            TITLETOPIC[0].map(function(val, index) {
+                $(titletop[index]).text(val)
+                $(contentall[index]).on('click', function() {
+                    $('.pNumber').text(TITLECHARACTER[0][index])
+                    $('.pTitleSide').text(TITLETOPIC[0][index])
+                    $('.pTitleSideSub').text(TITLECONTENT[0][index])
+                })
+            }) 
+        }else if(checkTabValue == 'secondTab') {
+            $('.pNumber').text(TITLECHARACTER[1][0])
+            $('.pTitleSide').text(TITLETOPIC[1][0])
+            $('.pTitleSideSub').text(TITLECONTENT[1][0])
+
+            TITLECHARACTER[1].map(function(val, index) {
+                $(titlechar[index]).text(val)
+            })
+            TITLETOPIC[1].map(function(val, index) {
+                $(titletop[index]).text(val)
+                $(contentall[index]).on('click', function() {
+                    $('.pNumber').text(TITLECHARACTER[1][index]).fadeIn( 4000 )
+                    $('.pTitleSide').text(TITLETOPIC[1][index]).fadeIn( 4000 )
+                    $('.pTitleSideSub').text(TITLECONTENT[1][index]).fadeIn( 4000 )
+              })
+            })
+        }else if(checkTabValue == 'thirdTab') {
+            $('.pNumber').text(TITLECHARACTER[2][0])
+            $('.pTitleSide').text(TITLETOPIC[2][0])
+            $('.pTitleSideSub').text(TITLECONTENT[2][0])
+
+            TITLECHARACTER[2].map(function(val, index) {
+                $(titlechar[index]).text(val)
+            })
+            TITLETOPIC[2].map(function(val, index) {
+                $(titletop[index]).text(val)
+                $(contentall[index]).on('click', function() {
+                    $('.pNumber').text(TITLECHARACTER[2][index])
+                    $('.pTitleSide').text(TITLETOPIC[2][index])
+                    $('.pTitleSideSub').text(TITLECONTENT[2][index])
+          })
+            })
+        }
+
         $( "#hideCapsules" ).animate({opacity: 1}, 2000);
 
     });
 
-    $('.contentOrgRes').on('click', function() {
-        $(this).css('height', '50%');
-        $(this).animate({
-            'z-index': '1',
-            bottom: '200px',
-            height: '300',
-            width: '500px',
-        },2000)
-        $(this).find('.pshowOnAnimate').animate({
-            opacity: '1'
-        }, 2000)
-    })
+    const TITLECHARACTER = [
+        ['O', 'O', 'C', 'P', 'J', 'J'],
+        ['M', 'S', 'P', 'B', 'T', 'S'],
+        ['K', 'B', 'H', 'C', 'C', 'T']
+    ]
+
+    const TITLETOPIC = [
+        ['Organization Assessment and Change Management', 'Organizational Design', 'Competency Framework Development / Assessment', 'Performance Management', 'Job Evaluation', 'Job Description'],
+        ['Managerial Leadership', 'Strategic Decision Making', 'Performace and Results Manageent', 'Building Powerful Teams', 'Transformational Leadership', 'Strategic and Critical Thinking'],
+        ['Knowledge Process Outsourcing', 'Background Investigation', 'HR Payroll Solution', 'CBA Negotiation', 'Corporate Set-up', 'Talent Assessment']        
+    ]
+
+    const TITLECONTENT = [
+        [
+            `Through proven tools and frameworks, HURIS systematically analyzes and evaluates the performance of an organization; then together with its key leaders, identifies the key strengths that propel the organization forward and areas of improvement that could derail the best laid plans and efforts.   We look into whether the organization is ready for change, has the capacity for it and helps the company ease into those changes effectively.`,
+            `Organizations become hampered when their business models and directions have changed because of the internal and external influences affecting them.  They need to adapt to survive and continue to grow or to speed up the growth they aspire for.  HURIS conducts independent reviews and analyses of the organization, its different functions, units, strategies, control systems and how these elements interplay to achieve strategic goals through effective organizational design.`,
+            `It is not enough to know what a job entails, but it is essential to possess the knowledge, skills, attitude to do the job successfully.  HURIS guides organizational leaders in defining these core competencies and understanding how they are manifested through both the organization’s and the individual employees’ behaviors.`,
+            `HURIS designs processes that align the organization’s strategic goal with those of the teams within.  The process fosters communication and clear expectation setting in all the levels of the company through performance planning, performance reviews and progress assessments.  It also identifies knowledge, skills and ability development needs and opportunities for the team members.`,
+            `HURIS employs various methods and approaches to assess the current value of specific jobs in an organization so that a satisfactory salary wage differential is determined. In a competitive and growing business environment, ensuring that employees are fairly compensated for their contributions and roles are critical to enhancing employers’ ability to attract and retain the best talents.`,
+            `Essential to the efficiency of each employee and to the recruitment process, jobs must be described accurately and correctly; responsibilities must be laid out for each function. HURIS assists this often complex and confusing process using proven and tested methods together with organizational leaders.`
+        ],
+        [
+            `Develop the discipline of Managerial Leadership by understanding the differences between leadership and management and then apply the right mix of their key skills to achieve positive results.`,
+            `The assessment, analysis and management of complex situations are integral to sound decision making. In this program, participants learn to make recommendations that create strategic actions to meeting objectives.`,
+            `An effective performance management system calls for discipline. Improve your team's success rate. Learn the process from planning, managing and monitoring performance, and providing timely, precise and accurate feedback to them.`,
+            `Develop your team's ability to define objectives and goals better, solve problems and resolve conflict, and foster trust in each one's contributions. Learn the various leadership and teamwork best practices.`,
+            `Become an effective leader. Learn how to help your team members’ map out attainable personal and professional goals, and create strategy to attain them.`,
+            `Strategic and critical thinking is an important skill that allows you to develop effective plans of action to attain organizational progress and change. This program provides you with the processes that build this essential leadership skill.`
+        ],
+        [
+            `Compensation and Benefits Management Recruitment Management Corporate Events General Administration HR Support Training Management Process Documentation`,
+            ``,
+            ``,
+            ``,
+            `Business Registration Document Processing and Acquisition Organizational Set-up`,
+            ``
+        ]
+    ]
+
+    // $('.contentOrgRes').on('click', function() {
+    //     $(this).css('height', '50%');
+    //     $(this).animate({
+    //         'z-index': '1',
+    //         bottom: '200px',
+    //         height: '300',
+    //         width: '500px',
+    //     },2000)
+    //     $(this).find('.pshowOnAnimate').animate({
+    //         opacity: '1'
+    //     }, 2000)
+    // })
 
     
-    $('.contentjobeva').on('click', function() {
-        $(this).find('.pshowOnAnimate').css('color', '#fff')
+    // $('.contentjobeva').on('click', function() {
+    //     $(this).find('.pshowOnAnimate').css('color', '#fff')
         
-        $(this).animate({
-            'z-index': '1',
-            top: '150',
-            height: '300px',
-            width: '500px',
-        },2000)
-        $(this).find('.pshowOnAnimate').animate({
-            opacity: '1'
-        }, 2000)
-    })
+    //     $(this).animate({
+    //         'z-index': '1',
+    //         top: '150',
+    //         height: '300px',
+    //         width: '500px',
+    //     },2000)
+    //     $(this).find('.pshowOnAnimate').animate({
+    //         opacity: '1'
+    //     }, 2000)
+    // })
 
-    $('.contentJobRes').on('click', function() {
-        $(this).css('height', '50%');
-        $(this).find('.pshowOnAnimate').css('color', '#fff')
+    // $('.contentJobRes').on('click', function() {
+    //     $(this).css('height', '50%');
+    //     $(this).find('.pshowOnAnimate').css('color', '#fff')
         
-        $(this).animate({
-            'z-index': '1',
-            bottom: '200px',
-            height: '300',
-            width: '500px',
-        },2000)
-        $(this).find('.pshowOnAnimate').animate({
-            opacity: '1'
-        }, 2000)
-    })
+    //     $(this).animate({
+    //         'z-index': '1',
+    //         bottom: '200px',
+    //         height: '300',
+    //         width: '500px',
+    //     },2000)
+    //     $(this).find('.pshowOnAnimate').animate({
+    //         opacity: '1'
+    //     }, 2000)
+    // })
 
     
-    $('.contentComDev').on('click', function() {
+    // $('.contentComDev').on('click', function() {
         
-        $(this).animate({
-            'z-index': '1',
-            top: '150',
-            height: '300px',
-            width: '500px',
-        },2000)
-        $(this).find('.pshowOnAnimate').animate({
-            opacity: '1'
-        }, 2000)
-    })
+    //     $(this).animate({
+    //         'z-index': '1',
+    //         top: '150',
+    //         height: '300px',
+    //         width: '500px',
+    //     },2000)
+    //     $(this).find('.pshowOnAnimate').animate({
+    //         opacity: '1'
+    //     }, 2000)
+    // })
     
-    $('.contentPerMan').on('click', function() {
-        $(this).css('height', '50%');
-        $(this).animate({
-            'z-index': '1',
-            bottom: '200px',
-            height: '300',
-            width: '500px',
-        },2000)
-        $(this).find('.pshowOnAnimate').animate({
-            opacity: '1'
-        }, 2000)
-    })
+    // $('.contentPerMan').on('click', function() {
+    //     $(this).css('height', '50%');
+    //     $(this).animate({
+    //         'z-index': '1',
+    //         bottom: '200px',
+    //         height: '300',
+    //         width: '500px',
+    //     },2000)
+    //     $(this).find('.pshowOnAnimate').animate({
+    //         opacity: '1'
+    //     }, 2000)
+    // })
 
-    $('.contentOrgCha').on('click', function() {
-        $(this).find('.pshowOnAnimate').css('color', '#fff')
+    // $('.contentOrgCha').on('click', function() {
+    //     $(this).find('.pshowOnAnimate').css('color', '#fff')
         
-        $(this).animate({
-            'z-index': '1',
-            top: '150',
-            height: '300px',
-            width: '500px',
-        },2000)
-        $(this).find('.pshowOnAnimate').animate({
-            opacity: '1'
-        }, 2000)
-    })
+    //     $(this).animate({
+    //         'z-index': '1',
+    //         top: '150',
+    //         height: '300px',
+    //         width: '500px',
+    //     },2000)
+    //     $(this).find('.pshowOnAnimate').animate({
+    //         opacity: '1'
+    //     }, 2000)
+    // })
 }) 
    
 </script>
