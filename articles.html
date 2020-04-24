@@ -4,212 +4,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <script src='Script\jquery-3.3.1.min.js'></script>
-    <link href='Css/article.css' rel='stylesheet' type='text/css'>
+    <link href='Css/articlespage.css' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src='Script\bootstrap.min.js'></script>
-    <script src="Script\visible.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neuton:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <title>Articles - Huris</title>
 </head>
 
 <body>
-
-    <div class="divmouse" style="position:fixed;left: 70px;bottom: 10px;">
-        <a href="#con2" class="mouse">
-            <div class="icon-scroll"></div>
-        </a>
-    </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="padding-top: 20px;transition: all 0.2s;">
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav class="navbar-brand" href="#">
-            <a href="#"><img src="Image/output-onlinepngtools.png" class="img-fluid imglogo"
-                    style="width: 170px;padding-left: 25px;transition: all 0.2s;"></a>
-        </nav>
-        <div class="collapse navbar-collapse" id="collapse">
-            <div class="ml-auto">
-                <ul class="nav navbar-nav">
-                    <li><a class="nav-link btnhome" href = "index.html" style="color:white;">HOME</a></li>
-                    <li><a class="nav-link btnevents" href = "#" style="color:white;">EVENTS</a>
-                    </li>
-                    <li><a class="nav-link btnarticles" href = "articles.html" style="color:white;">ARTICLES</a></li>
-                    <li><a class="nav-link btnabout" href = "beta.html" style="color:white;">ABOUT</a></li>
-                    <li><a class="nav-link btnsolutions" href = "solution.html" style="color:white;">SOLUTIONS</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container-fluid connavbar">
+        <div class="container con">
+            <nav class="navbar navbar-expand-md navbar-dark fixed-position"
+                style="padding: 15px 0px;background-color: white !important;">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="navbar-brand" href="#">
+                    <a href="#"><img src="Image/logoblue.png" class="img-fluid imglogo" style="width: 120px;"></a>
+                </nav>
+                <div class="collapse navbar-collapse" id="collapse">
+                    <div class="col2 ml-auto">
+                        <ul class="nav navbar-nav">
+                            <li><a class="nav-link btnabout"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="index.html">HOME</a></li>
+                            <li><a class="nav-link btncontact"
+                                    style="margin-right: 20px;color:#212121 ;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="contact.html" data-toggle="modal" data-target="#exampleModal3">EVENTS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="articles.html">ARTICLES</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="beta.html">ABOUT</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                    style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                    href="solution.html">SOLUTIONS</a>
+                            </li>
+                            <li><a class="nav-link btnget"
+                                style="margin-right: 20px;color:#212121;font-family: Poppins,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
+                                href="client.html">PARTNERS</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </nav>
-
-    <div class="container-fluid h-100 maincontainer" id="maincontainer" style="transition: background 1s linear;">
-        <div class="container con h-100 conPage1">
-            <div class="row h-100 align-items-center">
-                <div class="col-lg-8">
-                    <p class="particle">Article</p>
-                    <p class="particletitle">The Next <br> Generation HR</p>
-                    <p class="particlesub">The emergence of cutting edge technologies has
-                        brought <br> drastic changes
-                        in the world of business.</p>
-                    <br>
-                    <a class="cta">
-                        <span class="pclickme">Read more</span>
-                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
+    </div>
+    <div class="container-fluid" style="padding: 0px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+                    style="position: relative;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carousel1 align-items-center">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-end" style="height: 100%;padding-bottom: 40px;">
+                                    <div class="col-lg-8">
+                                        <hr class="hrCarousel">
+                                        <p class="pEventTitle animated fadeInUp fast">The evolving role of the human
+                                            resource professional </p>
+                                        <p class="pEventSubTitle animated fadeInUp fast">Elavation the role of human
+                                            resource in an
+                                            organization: becoming business savvy</p>
+                                        <div class="form-inline animated fadeInUp fast"
+                                            style="margin-top: 25px;animation-delay: 1.5s;">
+                                            <img src="Image/dp.jpeg" class="img-fluid imgProfCarousel">
+                                            <label class="pAuthor">Maggie Munoz Shih</label>
+                                            <label class="pDate">February 15, 2019</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item  carousel2 align-items-center">
+                            <div class="container" style="height: 100%;">
+                                <div class="row align-items-end" style="height: 100%;padding-bottom: 40px;">
+                                    <div class="col-lg-8">
+                                        <hr class="hrCarousel">
+                                        <p class="pEventTitle animated fadeInUp fast">Why today’s HR service delivery
+                                            model is failing? </p>
+                                        <p class="pEventSubTitle animated fadeInUp fast">Human Resource has undergone a
+                                            numerous process of transformation over the past decades.</p>
+                                        <div class="form-inline animated fadeInUp fast"
+                                            style="margin-top: 25px;animation-delay: 1.5s;">
+                                            <img src="Image/dp.jpeg" class="img-fluid imgProfCarousel">
+                                            <label class="pAuthor">Karl J. Larson, PhD</label>
+                                            <label class="pDate">February 15, 2019</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
                     </a>
                 </div>
-                <div class="col-lg-4">
-                    <ul>
-                        <li>
-                            <a class='animated-arrow' href='#'>
-                                <span class='the-arrow -left'>
-                                    <span class='shaft'></span>
-                                </span>
-                                <span class='main'>
-                                    <span class='text'>
-                                        Next Article
-                                    </span>
-                                    <span class='the-arrow -right'>
-                                        <span class='shaft'></span>
-                                    </span>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
-    <div class="container con" id="con2">
-        <div class="row" style="margin-top: 70px;">
-            <div class="col-lg-6">
-                <p class="p1">ARTICLE</p>
-                <p class="ptitle">Why today’s HR service delivery model is failing?</p>
-                <p class="ptitlesub">By recognizing the critical linkage between talent management and business success,
-                    business executives are now asking for their HR functions to play a vital role in strategic
-                    planning.</p>
-                <p class="pread"> > Read article</p>
-            </div>
-        </div>
+    <div class="container">
         <div class="row" style="margin-top: 40px;">
-            <div class="col-lg-12">
-                <div class="card-columns">
-                    <div class="card bg-dark text-white">
-                        <img src="Image/bg3.jpg" class="card-img img-solutions">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">Knowledge Process Outsourcing</h5>
-                            <p class="card-text">A 2012 report by the Chartered Institute of Personnel and Development
-                                (CIPD), Business Savvy: Giving HR the Edge.</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <img src="Image/article1.jpg" class="card-img img-solutions">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">The Evolving Role of the Human Resource Professional</h5>
-                            <p class="card-text">Is the provisioning of high-level tasks to a third party
-                                organization or to a different group.</p>
-                        </div>
-                    </div>
-                    <div class="card bg-primary text-white text-center p-3">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                            <footer class="blockquote-footer text-white">
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <img src="Image/article2.jpg" class="card-img img-solutions">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">Philippines finalists to the ABA 2017</h5>
-                            <p class="card-text">Is the provisioning of high-level tasks to a third party
-                                organization or to a different group.</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <img src="Image/assesment.jpg" class="card-img img-solutions">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">KDear Coach or Aspiring Coach</h5>
-                            <p class="card-text"> How do you get to work with senior leaders – even if you don’t have a
-                                best-selling book or don’t have a famous name in the coaching world? I know the answer
-                            </p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <img src="Image/coaching.jpg" class="card-img img-solutions">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">Is there a country where executive coaching will not work?</h5>
-                            <p class="card-text">I write this from Manila, Philippines, where I am training 50 wonderful
-                                executives and managers in the discipline of executive coaching — and we are having a
-                                second typhoon in a single week</p>
-                        </div>
-                    </div>
-                    <div class="card bg-primary text-white text-center p-3">
-                        <blockquote class="blockquote mb-0">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-                            <footer class="blockquote-footer text-white">
-                                <small>
-                                    Someone famous in <cite title="Source Title">Source Title</cite>
-                                </small>
-                            </footer>
-                        </blockquote>
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <img src="Image/footer.jpg" class="card-img img-solutions" style="">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">Knowledge Process Outsourcing</h5>
-                            <p class="card-text">Is the provisioning of high-level tasks to a third party
-                                organization or to a different group.</p>
-                        </div>
-                    </div>
-                    <div class="card bg-dark text-white">
-                        <img src="Image/article3.jpg" class="card-img img-solutions">
-                        <div class="card-img-overlay d-flex flex-column justify-content-end overlay-dark">
-                            <h5 class="card-title">HR Technology in 2017: Disruption Ahead</h5>
-                            <p class="card-text">By: Josh Bersin, October 2016 This article is originally posted in Josh
-                                Bersin’s blog: First, tools for engagement, pulse surveys, feedback management, and
-                                culture assessment will be white hot.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="background-color: #f5f5f5;padding: 70px 15px;margin-top: 70px;">
-        <div class="container con">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <p class="pnewsletter">The Huris newsletter</p>
-                    <p class="pget">Get highlights of the most important news delivered to your e-mail inbox</p>
-                    <div class="buttonInside mx-auto">
-                        <input placeholder="Enter email address" type="text" class="txtnewsletter">
-                    </div>
-                    <p class="pmorerecent">More recent newsletter</p>
-                    <hr class="hrnews">
-                </div>
-            </div>
-        </div>
-    </div>
+            <div class="col-lg-9 justify-content-center">
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/articlebg1.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTagsCard">CATEGORIE</p>
+                                    <p class="pTitleCard">6 Issues Haunting Your HR and How to Exorcise Them</p>
+                                    <p class="pCardDesc">What do clowns, claws, and compliance all have in common?
+                                        Hopefully, the
+                                        answer is not that they all cause you to tremble in fear! While we can’t do much
+                                        to help you with your coulrophobia, our guide can help you face the horrors of
+                                        HR.
+                                    </p>
 
-    <div class="container-fluid footer">
-        <div class="container confooter" style="margin-top:40px;">
-            <div class="row h-100 align-items-center" style="padding-top:40px;padding-bottom: 40px;">
-                <div class="col-lg-12 text-center">
-                    <p class="plets">Let's work together</p>
-                    <label class="plets1">We will find a solution of your problems. Dont't hesitate to ask us to discuss
-                        your needs!. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua.</label>
-                    <p></p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <img src="Image/dp.jpeg" class="img-fluid imgProf">
+                                        <label class="pAuthorCard">Catlyn Origitano<span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/assesment.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTagsCard">CATEGORIE</p>
+                                    <p class="pTitleCard">The Need for Consulting Skills in an Organization</p>
+                                    <p class="pCardDesc">A management consultant is an adviser to help management
+                                        improve their overall business.
+                                    </p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <img src="Image/dp.jpeg" class="img-fluid imgProf">
+                                        <label class="pAuthorCard">Karl Larson <span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/articlebg.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTagsCard">CATEGORIE</p>
+                                    <p class="pTitleCard">Organizational Development and Culture Transformation</p>
+                                    <p class="pCardDesc">WE ARE in the age of the “unthinkable”, the era of volatile and
+                                        unpredictable change & a world where the new rule is that there are no constant
+                                        rules
+                                    </p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <img src="Image/dp.jpeg" class="img-fluid imgProf">
+                                        <label class="pAuthorCard">Enrique Abadesco <span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <img src="Image/event.jpg" class="img-fluid">
+                                </div>
+                                <div class="col-lg-8 align-self-center">
+                                    <p class="pTagsCard">CATEGORIE</p>
+                                    <p class="pTitleCard">Overcoming Cabin Fever in Times of COVID-19 Quarantine</p>
+                                    <p class="pCardDesc">Fortunately, there are simply ways to cope with it.
+                                    </p>
+                                    <div class="form-inline" style="margin-top: 15px;">
+                                        <img src="Image/dp.jpeg" class="img-fluid imgProf">
+                                        <label class="pAuthorCard">Maggie Munoz Shih <span class="pDateCard">February 14,
+                                                2016</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btnLoadMore float-right">Load More Articles</button>
+            </div>
+            <div class="col-lg-3">
+                <p class="pFollow">Follow Huris</p>
+                <div class="form-inline">
+                    <img src="Image/facebookarticle.png" class="img-fluid" style="width: 40px;margin-right: 10px;">
+                    <img src="Image/twitterarticle.png" class="img-fluid" style="width: 40px;margin-right: 10px;">
+                    <img src="Image/linkedinarticle.png" class="img-fluid" style="width: 40px;margin-right: 10px;">
+                </div>
+                <hr>
+                <p class="pSubscribe">Keep up to date. Sign up for our Newsletter for the latest news.</p>
+                <input type="text" class="txtnewsletter" placeholder="Your email address">
+                <button class="btnSubscribe">Subscribe</button>
+                <p class="pSubscribe" style="margin-top: 20px;">Categories</p>
+                <p class="pCategories">Category (2)</p>
+                <p class="pCategories">Category (1)</p>
+                <p class="pCategories">Category (4)</p>
+                <p class="pCategories">Category (1)</p>
+                <p class="pSubscribe">Tags</p>
+                <div class="divTags" style="margin-top: -10px;">
+                    <label class="pTags">Tags</label><label class="pTags">Human</label><label
+                        class="pTags">Resource</label>
+                    <label class="pTags">Bussiness</label><label class="pTags">Tags</label><label
+                        class="pTags">Leadership</label>
+                    <label class="pTags">Tags</label><label class="pTags">Failling</label>
                 </div>
             </div>
         </div>
@@ -220,7 +260,7 @@
                 <div class="col-lg-2" style="padding-top: 70px;">
                     <p class="pfootertitle">About us</p>
                     <div class="form-group">
-                        <p class="pfootersub">Company Profile</p>
+                        <p class="pfootersub ">Company Profile</p>
                         <p class="pfootersub">Mission & Vision</p>
                         <p class="pfootersub">Executive Management</p>
                     </div>
@@ -268,7 +308,7 @@
                         and Solutions</label>
                 </div>
                 <div class="col-lg-6">
-                    <div class="form-inline float-right">
+                    <div class="form-inline float-right divfooterlogo">
                         <img src="Image/facebook-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
                         <img src="Image/twitter.png" class="img-fluid" style="margin-right:15px;width:18px;">
                         <img src="Image/linkedin-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
@@ -277,32 +317,5 @@
             </div>
         </div>
 </body>
-<script>
-    $(".mouse").click(function () {
-        $('.divmouse').css("display", "none");
-        $('.divlogo').css("display", "none");
-    });
-
-    $(".animated-arrow").click(function () {
-        $('.particletitle').animate({ 'opacity': 0 }, 1000, function () {
-            $(this).text('The Evolving Role of the Human Resource Professional');
-            $('.particlesub').text('Human Resource has undergone a numerous process of transformation over the past decades.');
-        }).animate({ 'opacity': 1 }, 400);
-        document.getElementById("maincontainer").style.background = "linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(Image/articlebg1.jpg)";
-        document.getElementById("maincontainer").style.backgroundSize = "cover";
-
-    });
-
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll < 50) {
-            $('.navbar').attr('style','background-color: transparent !important');
-            $('.nav-link').css({"color": 'white', "margin-top": '20px'});
-        } else {
-            $('.navbar').attr('style','background-color: #212121 !important');
-            $('.nav-link').css({"color": 'white', "margin-top": '20px'});
-        }
-    });
-</script>
 
 </html>
