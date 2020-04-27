@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title> Human Resource Innovations
+        and Solutions</title>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <script src='Script\jquery-3.3.1.min.js'></script>
-    <link href='Css/clients.css' rel='stylesheet' type='text/css'>
+    <link href='Css/main.css' rel='stylesheet' type='text/css'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -16,174 +20,578 @@
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/minibarjs@latest/dist/minibar.min.css">
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>Clients</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+    <script src="Script\pageable.min.js"></script>
+    <script src="Script\visible.js"></script>
 </head>
 
-<body>
-    <div class="container-fluid connavbar">
-        <div class="container con">
-            <nav class="navbar navbar-expand-md navbar-dark" style="padding: 15px 0px;background-color: #212121;">
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="navbar-brand" href="#">
-                    <a href="#"><img src="Image/logo.png" class="img-fluid imglogo" style="width: 118px;"></a>
-                </nav>
-                <div class="collapse navbar-collapse" id="collapse">
-                    <div class="col2 ml-auto">
-                        <ul class="nav navbar-nav">
-                            <li><a class="nav-link btnabout"
-                                    style="margin-right: 20px;color:white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                    href="index.html">HOME</a></li>
-                            <li><a class="nav-link btnget"
-                                style="margin-right: 20px;color:white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                href="beta.html">ABOUT</a>
-                            </li>
-                            <li><a class="nav-link btnget"
-                                style="margin-right: 20px;color:white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                href="solution.html">SOLUTIONS</a>
-                            </li>
-                            <li><a class="nav-link btnget"
-                                style="margin-right: 20px;color:    white;font-family: Roboto,sans-serif;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                href="articles.html">ARTICLES</a>
-                            </li>
-                            <li><a class="nav-link btncontact"
-                                    style="margin-right: 20px;color:white ;font-family: Roboto;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                    href="#">EVENTS</a>
-                            </li>
-                            <li><a class="nav-link btncontact"
-                                style="margin-right: 20px;color:white ;font-family: Roboto;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                href="client.html">PARTNERS</a>
-                            </li>
-                            <li><a class="nav-link btncontact"
-                                style="margin-right: 20px;color:white ;font-family: Roboto;font-size: 0.9rem;font-weight: 500;  position: relative;text-decoration: none;"
-                                href="contactus.html">CONTACT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<body >
+    <!-- <div class="container-fluid h-100 conloader">
+        <div class="center">
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
+            <span class="span"></span>
         </div>
+    </div> -->
+
+    <!-- <div class="divlogo">
+        <img src="Image/output-onlinepngtools.png" class="img-fluid" style="width: 120px;">
     </div>
-    <div class="container-fluid h-100">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center rowTop">
-                <div class="col-lg-12 text-center align-self-center">
-                    <p class="pTake">Contact Us</p>
-                    <div class="divClients" id="divClients" style="margin-top: 70px;">
-                        <div class="card-deck">
-                            <div class="row">
-                                <div class="col-md-6">Phone No</div>
-                                <div class="col-md-6">(02) 7746-2961 / (02) 8661-5954</div>
-                                <div class="col-md-6">Email</div>
-                                <div class="col-md-6">consult@huris.com.ph </div>
-                                <div class="col-md-6">Address</div>
-                                <div class="col-md-6">
-                                    Suite M3, Seven East Capitol Building<br />
-                                    #7 East Capitol Drive, Barangay Kapitolyo Pasig City,<br />
-                                    Metro Manila 1603 Philippines
-                                </div>
-                              </div>
+
+    <div class="divlogofooter form-inline">
+        <img src="Image/envelope.png" class="img-fluid imgnewsletter"
+            style="width: 20px;margin-right: 20px;cursor:pointer;" data-container="body" data-toggle="popover"
+            data-placement="top" data-content="Subscribe to our newsletter!">
+        <div class="horizontal">
+
+        </div>
+        <img src="Image/facebook-logo.png" class="img-fluid" style="width: 18px;margin-right: 20px;">
+        <img src="Image/twitter.png" class="img-fluid" style="width: 18px;margin-right: 20px;">
+        <img src="Image/linkedin-logo.png" class="img-fluid" style="width: 18px">
+    </div>
+
+    <div class="divrights">
+        <p>Copyright Human Resource Innovations
+            and Solutions</p>
+    </div> -->
+
+
+    <div class="anchors">
+        <ul class="form-inline">
+            <li><a href="index.html" class="navibar nav1">HOME</a></li>
+            <li><a href="beta.html" class="navibar nav4">ABOUT</a></li>
+            <li><a href="solution.html" class="navibar nav5">SOLUTIONS</a></li>
+            <li><a href="articles.html" class="navibar nav3">ARTICLES</a></li>
+            <!-- <li><a href="#page-2" class="navibar nav2">EVENTS</a></li> -->
+            <li><a href="#" class="navibar nav2">EVENTS</a></li>
+            <li><a href="client.html" class="navibar nav5">PARTNERS</a></li>
+            <li><a href="contactus.html" class="navibar nav5">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <!-- <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div> -->
+
+
+    <!-- <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
+            <ul>
+                <li style="width: 100% !important;"><a href="#">Home</a></li>
+                <li style="width: 100% !important;"><a href="#">Solutions</a></li>
+                <li style="width: 100% !important;"><a href="#">Trainings</a></li>
+                <li style="width: 100% !important;"><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content" style="padding: 0px 10px;">
+                <div class="modal-header" style="border: 0px;padding-top:25px;padding-bottom: 0px;">
+                    <h5 class="modal-title" id="exampleModalLabel"><img src="Image/hurisblue.png" class="img-fluid"
+                            style="width: 20px;margin-right: 2px;">Huris</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" style="border: 0px;">
+                    <p class="penter">Enter your email</p>
+                    <p class="pnews">Want to read our post and stay updated in our events? Subscribe to our newsletter.
+                    </p>
+                    <input type="text" class="txtnews">
+                    <button type="button" class="btnenter">Subscribe</button>
+                    <p class="pquestions">Questions? Email us at <span style="color: #0f4c81;">consult@huris.com.ph</span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <main>
+        <!-- <section data-anchor="page 1" class="page1" style="visibility: hidden;">
+            <div class="container-fluid h-100 conPage1">
+                <div class="row h-100 align-items-center justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="content text-center" style="margin-left: 20px;">
+                            <p class="pwelcome animated bounce" id="p1">Desired business results</p>
+                            <p class="pwelcomesub" id="p2">Our brand is knowledge</p>
+                            <div class="progress mx-auto d-flex"
+                                style="background-color: rgba(189, 189, 189, .5) !important;height: 5px;width:200px;">
+                                <div class="progress-bar bg-white" style="width:0%"></div>
+                            </div>
+                            <a href="beta.html"><button class="btn-5" style="z-index: 999999999999999;">About Us</button></a>
+                            <a href="solution.html"><button class="btn-5" style="z-index: 999999999999999;">Our Solutions</button></a>
                         </div>
                     </div>
                 </div>
-                
             </div>
-        </div>
-    </div>
-    <div class="container-fluid footer" style="margin-top: 40px;">
-        <div class="container" style="padding-bottom: 20px;">
-            <div class="row">
-                <div class="col-lg-2" style="padding-top: 70px;">
-                    <p class="pfootertitle">About us</p>
-                    <div class="form-group">
-                        <p class="pfootersub ">Company Profile</p>
-                        <p class="pfootersub">Mission & Vision</p>
-                        <p class="pfootersub">Executive Management</p>
+        </section>
+        <section data-anchor="page 2">
+            <div class="container con h-100 conPage2">
+                <div class="row h-100 align-items-center colart1">
+                    <div class="col-lg-6 col-md-6">
+                        <p class="pmaintitle">&#x2014; CESB Accredited Leadership Program</p>
+                        <p class="pmainevent">Building <br> Powerful Teams</p>
+                        <p class="peventmainlocation">Astoria Plaza Hotel 15 Escriva Drive, Ortigas Business District,
+                            Pasig, 1600 Metro Manila</p>
+                        <p class="peventtime">21 - 22 November , 2019</p>
+                        <ul style="margin: 20px 0px;padding: 0px;" class="btnexploremore">
+                            <li>
+                                <a class='animated-arrow' href='https://google.com'>
+                                    <span class='the-arrow -left'>
+                                        <span class='shaft'></span>
+                                    </span>
+                                    <span class='main'>
+                                        <span class='text'>
+                                            Explore More
+                                        </span>
+                                        <span class='the-arrow -right'>
+                                            <span class='shaft'></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-lg-2" style="padding-top: 70px;">
-                    <p class="pfootertitle">Solutions</p>
-                    <div class="form-group">
-                        <p class="pfootersub">Strategic Planning</p>
-                        <p class="pfootersub">Executive Coaching</p>
-                        <p class="pfootersub">KPO</p>
-                    </div>
-                </div>
-                <div class="col-lg-2" style="padding-top: 70px;">
-                    <p class="pfootertitle">Trainings</p>
-                    <div class="form-group">
-                        <p class="pfootersub">CESB Accredited Programs</p>
-                        <p class="pfootersub">In-house L&D Progams</p>
-                    </div>
-                </div>
-                <div class="col-lg-2" style="padding-top: 70px;">
-                    <p class="pfootertitle">Partners</p>
-                    <div class="form-group">
-                        <p class="pfootersub">List of Partners</p>
-                    </div>
-                </div>
-                <div class="col-lg-2" style="padding-top: 70px;">
-                    <p class="pfootertitle">Clients</p>
-                    <div class="form-group">
-                        <p class="pfootersub">List of Clients</p>
-                    </div>
-                </div>
-                <div class="col-lg-2" style="padding-top: 70px;">
-                    <p class="pfootertitle">Contact us</p>
-                    <div class="form-group">
-                        <p class="pfootersub">Address</p>
-                        <p class="pfootersub">
-                            Suite M3, Seven East Capitol Building<br />
-                            #7 East Capitol Drive, Barangay Kapitolyo Pasig City,<br />
-                            Metro Manila 1603 Philippines
-                        </p>
-                        <p class="pfootersub">Email us</p>
-                        <p class="pfootersub">consult@huris.com.ph</p>
-                        <p class="pfootersub">Telephone & Social</p>
-                        <p class="pfootersub">
-                            (02) 7746-2961<br /> 
-                            (02) 8661-5954
-                        </p>
-                        <p class="pfootersub">Send us a Message</p>
+                    <div class="col-lg-6 col-md-6 colart1">
+                        <div class="row" style="padding: 0px;">
+                            <div class="col-lg-12" style="padding-left: 0px;">
+                                <ul style="margin: 10px 0px;padding: 0px;">
+                                    <li>
+                                        <a class='animated-arrow' href='eventpage.html'>
+                                            <span class='the-arrow -left'>
+                                                <span class='shaft'></span>
+                                            </span>
+                                            <span class='main'>
+                                                <span class='text'>
+                                                    List of all events
+                                                </span>
+                                                <span class='the-arrow -right'>
+                                                    <span class='shaft'></span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px dashed white;padding-top: 15px;">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2" style="padding-left: 0px;">
+                                <div class="box text-center">
+                                    <p class="pmonth">25 <span style="color: #ef5350;">/</span> 11</p>
+                                    <p class="pyear">2019</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 colEvent1">
+                                <p class="peventtitle">Managerial Leadership</p>
+                                <p class="peventlocation">Astoria Plaza Hotel 15 Escriva Drive, Ortigas Business
+                                    District, Pasig, 1600 Metro Manila</p>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px dashed white;padding-top: 15px;margin-top: 10px;">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2" style="padding-left: 0px;">
+                                <div class="box text-center">
+                                    <p class="pmonth">7 <span style="color: #ef5350;">/</span> 11</p>
+                                    <p class="pyear">2019</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 colEvent2">
+                                <p class="peventtitle">Strategic Decision Making</p>
+                                <p class="peventlocation">Astoria Plaza Hotel, Ortigas, Pasig City</p>
+                            </div>
+                        </div>
+                        <div class="row" style="border-top: 1px dashed white;padding-top: 15px;margin-top: 10px;">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-2" style="padding-left: 0px;">
+                                <div class="box text-center">
+                                    <p class="pmonth">25 <span style="color: #ef5350;">/</span> 11</p>
+                                    <p class="pyear">2019</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-10 colEvent3">
+                                <p class="peventtitle">Performance and Results Management</p>
+                                <p class="peventlocation">Astoria Plaza Hotel 15 Escriva Drive, Ortigas Business
+                                    District, Pasig, 1600 Metro Manila</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row" style="margin-top:40px;">
-                <div class="col-lg-6">
-                    <label style="font-family: hind;font-size:15px;color:white;">Copyright Human Resource Innovations
-                        and Solutions</label>
-                </div>
-                <div class="col-lg-6">
-                    <div class="form-inline float-right divfooterlogo">
-                        <img src="Image/facebook-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
-                        <img src="Image/twitter.png" class="img-fluid" style="margin-right:15px;width:18px;">
-                        <img src="Image/linkedin-logo.png" class="img-fluid" style="margin-right:15px;width:18px;">
+        </section>
+        <section data-anchor="page 3">
+            <div class="container-fluid h-100 conPage3">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-4 h-100" style="padding: 0px !important;">
+                        <div class="outer-div">
+                            <a href="articlesample.html">
+                                <div class="inner-div">
+                                    <div class="form-group text-center colart1" style="top: 40%;position:absolute;">
+                                        <p class="pdate">02.03.19</p>
+                                        <label class="particletitle1">Why today’s HR service delivery model is failing?
+                                        </label>
+                                        <label class="particlecontent1">Human Resource has undergone a numerous process
+                                            of
+                                            transformation over
+                                            the past decades. </label>
+                                            
+                                            <a class="btn btn-primary" href="articles.html"style="width: 70%;color: white;">Explore More</a>
+                                        </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle2" style="padding: 0px !important;">
+                        <div class="outer-div1">
+                            <a href="articlesample1.html">
+                                <div class="inner-div1">
+                                    <div class="form-group text-center colart2" style="top: 40%;position:absolute;">
+                                        <p class="pdate">02.03.19</p>
+                                        <label class="particletitle1">The Next Generation HR
+                                        </label>
+                                        <label class="particlecontent1">The emergence of cutting edge technologies has
+                                            brought drastic changes
+                                            in the world of business. </label>
+                                        <a class="btn btn-primary" href="articles.html"style="width: 70%;color: white;">Explore More</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle3" style="padding: 0px !important;">
+                        <div class="outer-div2">
+                            <a href="articlesample2.html">
+                                <div class="inner-div2">
+                                    <div class="form-group text-center colart3" style="top: 40%;position:absolute;">
+                                        <p class="pdate">02.03.19</p>
+                                        <label class="particletitle1">Philippines finalists to the ABA 2017
+                                        </label>
+                                        <label class="particlecontent1">This coming Sept. 6, we shall name the latest
+                                            winners of the ASEAN
+                                            Business Awards 2017. </label>
+                                            <a class="btn btn-primary" href="articles.html"style="width: 70%;color: white;">Explore More</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section> -->
+        <section data-anchor="page 4">
+            <div class="container h-100 conPage4">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-6 col-md-6 col-sm-12 colart1">
+                        <p class="pfooter">Let's do<br>something<br>awesome today</p>
+                        <!-- <a class="btn btn-primary" href="beta.html"style="width: 70%;color: white;">Who we are!</a> -->
+                       <p class="pquestionsfooter">Questions? Contact us at <span
+                                style="text-decoration: underline;">consult@huris.com.ph</span></p>
+                        
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 colart2 col2footer" style="margin-top: -40px;">
+                        <p class="ptitlefooter">Phone</p>
+                        <p class="ptitlefootersub">(02) 896 7895 <br> (02) 8661-5954</p>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 colart3 col3footer">
+                        <p class="ptitlefooter">Address</p>
+                        <p class="ptitlefootersub">Suite M3, Seven East Capitol Building
+                            #7 East Capitol Drive, Barangay Kapitolyo Pasig City,
+                            Metro Manila 1603 Philippines</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section data-anchor="page 5">
+            <div class="container h-100 conPage5">
+                <div class="row h-100 align-items-center">
+                    <div class="col-lg-12 colart1 text-center">
+                        <p class="pSolutions">Our Solutions</p>
+                        <label class="pSolutionsDesc" style="padding-bottom: 20px;">We provide business transformation through advanced HR methodologies.</label>
+                        <div class="row justify-content-around">
+                            <div class="col-lg-9">
+                                <div class="card-deck">
+                                    <div class="card text-center cardSolution3" style="padding: 30px 10px;">
+                                        <img src="Image/sol1.png"
+                                            class="card-img-top mx-auto d-flex img-fluid imgSolution3" alt="..."
+                                            style="width: 50px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title-solutions" style="margin-bottom: 25%">Organization Development solutions</h5>
+                                            
+                                            <a href="solution.html" class="btnexplore">Explore </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card text-center cardSolution2" style="padding: 30px 10px;">
+                                        <img src="Image/sol2.png"
+                                            class="card-img-top mx-auto d-flex img-fluid imgSolution2" alt="..."
+                                            style="width: 50px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title-solutions" style="margin-bottom: 25%">Management Development Programs</h5>
+                                            <a href="solution.html" class="btnexplore">Explore </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card text-center cardSolution1" style="padding: 30px 10px;">
+                                        <img src="Image/sol3.png"
+                                            class="card-img-top mx-auto d-flex img-fluid imgSolution1" alt="..."
+                                            style="width: 50px;">
+                                        <div class="card-body">
+                                            <h5 class="card-title-solutions" style="margin-bottom: 25%">Business Solutions</h5><br />
+                                            <a href="solution.html" class="btnexplore">Explore </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- 
+
+         <section data-anchor="page 6">
+            <div class="container-fluid h-100 conPage6">
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div class="col-lg-4 col-md-4 h-100" style="padding: 0px !important;">
+                        <div class="outer-div">
+                            <a href="articlesample.html">
+                                <div class="inner-div-1">
+                                    <div class="form-group text-center colart1" style="top: 40%;position:absolute;">
+                                        <img src="Image/portfolio.png" class="img-fluid">
+                                        <p class="pdate">_____</p>
+                                        <label class="particletitle1">Business services
+                                        </label>
+                                        <label class="particlecontent1">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</label> <br>
+                                        <input type="button" value="EXPLORE &nbsp; &#x279D;" class="btnexplore">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle2" style="padding: 0px !important;">
+                        <div class="outer-div1">
+                            <a href="articlesample1.html">
+                                <div class="inner-div1">
+                                    <div class="form-group text-center colart2" style="top: 40%;position:absolute;">
+                                        <img src="Image/management.png" class="img-fluid">
+                                        <p class="pdate">_____</p>
+                                        <label class="particletitle1">Management <br> Development Programs
+                                        </label>
+                                        <label class="particlecontent1">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</label><br>
+                                        <input type="button" value="EXPLORE &nbsp; &#x279D;" class="btnexplore">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 h-100 colarticle3" style="padding: 0px !important;">
+                        <div class="outer-div2">
+                            <a href="articlesample2.html">
+                                <div class="inner-div2">
+                                    <div class="form-group text-center colart3" style="top: 40%;position:absolute;">
+                                        <img src="Image/organization.png" class="img-fluid">
+                                        <p class="pdate">_____</p>
+                                        <label class="particletitle1">Organization <br> Development solutions
+                                        </label>
+                                        <label class="particlecontent1">Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</label><br>
+                                        <input type="button" value="EXPLORE &nbsp; &#x279D;" class="btnexplore">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       -->
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </body>
 <script>
-    $('body').bind('DOMMouseScroll', function (e) {
-        if (e.originalEvent.detail > 0) {
-            document.getElementById('divClients').scrollTop += 20;
-        } else {
-            //scroll up
-            document.getElementById('divClients').scrollTop -= 20;
+    const pageable = new Pageable("main", {
+        freeScroll: true,
+        swipeThreshold: 200,
+        onBeforeStart: function () {
+            $('.colart1').removeClass("animated fadeInUp");
+            $('.colart2').removeClass("animated fadeInUp");
+            $('.colart3').removeClass("animated fadeInUp");
+            $(".imgnewsletter").popover('dispose');
+        },
+        onFinish: function () {
+            $('.colart1').removeClass("animated fadeInUp");
+            $('.colart1').addClass("animated fadeInUp faster");
+            $('.colart2').removeClass("animated fadeInUp");
+            $('.colart2').addClass("animated fadeInUp faster");
+            $('.colart3').removeClass("animated fadeInUp");
+            $('.colart3').addClass("animated fadeInUp faster");
+
+            if ($('.conPage1').visible(true)) {
+                $('.nav1').attr('style', 'color: #1565C0');
+            } else {
+                $('.nav1').attr('style', 'color: white !important');
+            }
+
+            if ($('.conPage2').visible(true)) {
+                $('.nav2').attr('style', 'color: #1565C0');
+            } else {
+                $('.nav2').attr('style', 'color: white !important');
+            }
+
+            if ($('.conPage3').visible(true)) {
+                $('.nav3').attr('style', 'color: #1565C0');
+            } else {
+                $('.nav3').attr('style', 'color: white !important');
+            }
+
+            if ($('.conPage4').visible(true)) {
+                $('.nav4').attr('style', 'color: #1565C0');
+            } else {
+                $('.nav4').attr('style', 'color: white !important');
+            }
+
+            if ($('.conPage5').visible(true)) {
+                $('.nav5').attr('style', 'color: #1565C0');
+            } else {
+                $('.nav5').attr('style', 'color: white !important');
+            }
         }
     });
 
-    //IE, Opera, Safari
-    $('#elem').bind('mousewheel', function (e) {
-        if (e.originalEvent.wheelDelta < 0) {
-            //scroll down
-            document.getElementById('divClients').scrollTop += 20;
-        } else {
-            //scroll up
-            document.getElementById('divClients').scrollTop -= 20;
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })
+
+    $(function () {
+        $(".imgnewsletter").on('click', function () {
+            $(".imgnewsletter").popover('dispose');
+            $('#exampleModal').modal('show');
+        });
+    });
+
+    $(document).ready(function () {
+        function animateDivers() {
+            $('.progress-bar').animate(
+                { 'width': '100%' }
+                , 5000
+            )
+                .animate(
+                    { 'width': '0%' }
+                    , 1
+                    , animateDivers //callback the function, to restart animation cycle
+                );
         }
+
+        animateDivers(); //call, to start the animation
+    });
+
+
+    var text = ["Our Brand is knowledge", "Organizational effectiveness"];
+    var text2 = ["Desired business results", "Our Brand is Organisational Effectiveness", "We offer you the best"];
+    var counter = 0;
+    var elem = document.getElementById("p1");
+    var elem1 = document.getElementById("p2");
+    setInterval(change, 5000);
+
+    function change() {
+        elem.classList.add('hide');
+        elem1.classList.add('hide');
+        setTimeout(function () {
+            elem.innerHTML = text[counter];
+            elem.classList.remove('hide');
+            elem1.innerHTML = text2[counter];
+            elem1.classList.remove('hide');
+            counter++;
+            if (counter >= text.length) {
+                counter = 0;
+            }
+        }, 200);
+    }
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    AOS.init();
+
+    $('#toggle').click(function () {
+        $(this).toggleClass('active');
+        $('#overlay').toggleClass('open');
+    });
+
+
+    $.fn.isInViewport = function () {
+        let elementTop = $(this).offset().top;
+        let elementBottom = elementTop + $(this).outerHeight();
+
+        let viewportTop = $(window).scrollTop();
+        let viewportBottom = viewportTop + $(window).height();
+
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+
+
+
+    window.onload = function () {
+        $('.conloader').addClass("animated fadeOut");
+        $('.page1').css("visibility", "visible");
+        $(".imgnewsletter").popover('show');
+        if ($(window).width() < 990) {
+            $('.pmainevent').text('Building Powerful Team');
+        }
+        else {
+            $('.pmainevent').text('Building ' < br > ' Powerful Team');
+        }
+    }
+
+    $(window).resize(function () {
+        if ($(window).width() < 990) {
+            $('.pmainevent').text('Building Powerful Team');
+        }
+        else {
+            $('.pmainevent').text('Building ' < br > ' Powerful Team');
+        }
+    });
+
+    $(".cardSolution1").hover(function () {
+        $('.imgSolution1').attr('src', 'Image/sol3.png');
+    }, function () {
+        $('.imgSolution1').attr('src', 'Image/sol3.png');
+    });
+
+    $(".cardSolution2").hover(function () {
+        $('.imgSolution2').attr('src', 'Image/sol2.png');
+    }, function () {
+        $('.imgSolution2').attr('src', 'Image/sol2.png');
+    });
+
+    $(".cardSolution3").hover(function () {
+        $('.imgSolution3').attr('src', 'Image/sol1.png');
+    }, function () {
+        $('.imgSolution3').attr('src', 'Image/sol1.png');
     });
 </script>
 
