@@ -173,7 +173,7 @@
                 <p class="pNumber"></p>
                 <div class="divSide">
                     <p class="pTitleSide"></p>
-                    <p class="pTitleSideSub"></p>
+                    <p class="pTitleSideSub" id="pTitleSideSub"></p>
                     <input type="hidden" id="inquire_val" value="" />
                     <a href="contactus.html"><button class="btnExplore">Inquire Now</button></a>
                 </div>
@@ -423,9 +423,28 @@ $(document).ready(function () {
     `;
 
     // var titlechar = document.getElementsByClassName("pChar");
-    let mds_desc = `<h5 class="text-center pTitleSideSub">HURIS regularly runs public and in-house workshops and seminars for both private and government sectors.  All are designed to answer the learning and development needs of executives and rising stars. These programs may also be re-designed to suit the specific needs of each client organization.</h5>`
+    let mds_desc = `<h5 class="text-center titleTopDesc">HURIS regularly runs public and in-house workshops and seminars for both private and government sectors.  All are designed to answer the learning and development needs of executives and rising stars. These programs may also be re-designed to suit the specific needs of each client organization.</h5>`
 
-    let buserv = `<h5 class="text-center pTitleSideSub">HURIS provides services for HR and other business processes such as recruitment, payroll, timekeeping, Learning and Development management, secretarial, and clerical work.  The service frees small and medium scale businesses of the burden of having to maintain a regular pool of employees, and the added costs of benefits and other ancillary expenses of having them in your regular employ.</h5> `
+    let cipd = `<h5 class="text-center titleTopDesc">As part of HURIS’ partnership with UK-based Chartered Institute of Personnel and Development (CIPD), four public workshops are run annually under the aegis of HURIS’ CIPD accredited consultants.  The series is a response of the international HR community’s need to move away from the traditional operational functions of the profession to taking more strategic, high level roles in any organization. <br /><br />
+
+        Participants may opt to take single stand-alone modules or complete the entire program and earn an internationally recognized CIPD Certificate of Completion.  These courses may also be run in-house for larger corporate groups.
+        </h5> `
+    let buserv = `<h5 class="text-center titleTopDesc">HURIS provides services for HR and other business processes such as recruitment, payroll, timekeeping, Learning and Development management, secretarial, and clerical work.  The service frees small and medium scale businesses of the burden of having to maintain a regular pool of employees, and the added costs of benefits and other ancillary expenses of having them in your regular employ.</h5> `
+
+    let knowledge = `<ul>
+                        
+                        <li>Compensation and Benefits Management</li>
+                        <li>Recruitment Management</li>
+                        <li>Corporate Events</li>
+                        <li>General Administration</li>
+                        <li>HR Support Training Management</li>
+                        <li>Process Documentation</li>
+            
+                    </ul>`
+    let corpsetup = `<ul>
+                        <li>Business Registration Document Processing and Acquisition</li>
+                        <li>Organizational Set-up</li>
+                    </ul>`
     var titletop = document.getElementsByClassName("pTopic");
     var contentall = document.getElementsByClassName("contentAllText");
     $('.secondaryparentAnimate').on('click', function() {
@@ -520,6 +539,9 @@ $(document).ready(function () {
             $('.pNumber').text(SECONDARYTITLECHARACTER[1][0])
             $('.pTitleSide').text(SECONDTITLETOPIC[1][0])
             $('.pTitleSideSub').text(SECONDARYTITLECONTENT[1][0])
+            $('#mdsDesc').html("");
+            $('#mdsDesc').html(cipd);
+            $('#mdsDesc').animate({opacity: 1}, 2000);
 
             // SECONDARYTITLECHARACTER[1].map(function(val, index) {
             //     $(titlechar[index]).text(val)
@@ -546,6 +568,7 @@ $(document).ready(function () {
         }else if(secondarycheckTabValue == 'secondarythirdtab') {
             $('.putSecondaryAllText').html(createsecondaryCapsules3)
             $('.pTopic').css('margin-bottom', '30%')
+            $('#pTitleSideSub').text("");
 
             $('#secondarysecondtab').css({
                 'border-radius': '25px',
@@ -573,6 +596,8 @@ $(document).ready(function () {
             $('.pNumber').text(SECONDARYTITLECHARACTER[2][0])
             $('.pTitleSide').text(SECONDTITLETOPIC[2][0])
             $('.pTitleSideSub').text(SECONDARYTITLECONTENT[2][0])
+            $('#mdsDesc').html("");
+            $('#mdsDesc').animate({opacity: 1}, 2000);
 
             // SECONDARYTITLECHARACTER[2].map(function(val, index) {
             //     $(titlechar[index]).text(val)
@@ -582,7 +607,7 @@ $(document).ready(function () {
                 $(contentall[index]).on('click', function() {
                     $('.pNumber').text(SECONDARYTITLECHARACTER[2][index])
                     $('.pTitleSide').text(SECONDTITLETOPIC[2][index])
-                    $('.pTitleSideSub').text(SECONDARYTITLECONTENT[2][index])
+                    $('.pTitleSideSub').text(SECONDTITLETOPIC[2][index])
                     $('.divSide').find('#inquire_val').val(SECONDTITLETOPIC[2][index]);
 
                     $('.contentAllText').css('background-color', '#225992')
@@ -741,7 +766,7 @@ $(document).ready(function () {
             $('#hideSecondCapsules').css('display', 'none');
             $('.pNumber').text(TITLECHARACTER[1][0])
             $('.pTitleSide').text(TITLETOPIC[1][0])
-            $('.pTitleSideSub').text(TITLECONTENT[1][0])
+            $('.pTitleSideSub').html(TITLECONTENT[1][0])
             $('#mdsDesc').html("");
             $('#mdsDesc').html(buserv);
             $('#mdsDesc').animate({opacity: 1}, 2000);
@@ -753,7 +778,7 @@ $(document).ready(function () {
                 $(contentall[index]).on('click', function() {
                     $('.pNumber').text(TITLECHARACTER[1][index])
                     $('.pTitleSide').text(TITLETOPIC[1][index])
-                    $('.pTitleSideSub').text(TITLECONTENT[1][index])
+                    $('.pTitleSideSub').html(TITLECONTENT[1][index])
                     $('.divSide').find('#inquire_val').val(TITLETOPIC[1][index]);
 
                     $('.contentAllText').css('background-color', '#225992')
@@ -792,11 +817,11 @@ $(document).ready(function () {
             `Essential to the efficiency of each employee and to the recruitment process, jobs must be described accurately and correctly; responsibilities must be laid out for each function. HURIS assists this often complex and confusing process using proven and tested methods together with organizational leaders.`
         ],
         [
-            `Compensation and Benefits Management Recruitment Management Corporate Events General Administration HR Support Training Management Process Documentation`,
+            knowledge,
             `Inquire to learn more about this.`,
             `Inquire to learn more about this.`,
             `Inquire to learn more about this.`,
-            `Business Registration Document Processing and Acquisition Organizational Set-up`,
+            corpsetup,
             `Inquire to learn more about this.`
         ]
     ]
@@ -833,7 +858,6 @@ $(document).ready(function () {
             `HR gathers data and information and draws insights to make predictive assessments and critical decisions for the organization’s growth and success.`,
             `Building credible and productive relationships is crucial in influencing leaders of the organization to become a catalyst for change and success.`,
             `Coaching and mentoring have been cited as the most important management skill-sets for the next decade of the HR profession.  The demands of evolving organizations call for HR professionals who have the credibility and respect of their leaders to help steer their organizations through transformation.`,
-            `More often than not senior executives find themselves on their own when it comes to making the final decisions, keeping the balance between the immediate, mundane matters and those strategic matters that really do matter.  And then there’s holding oneself together in the face of frustration, pressure and urgency.  HURIS provides coaching services for the decision makers at the top of the corporate ladder, as well as for those rising stars.`,
         ],
         [`More often than not senior executives find themselves on their own when it comes to making the final decisions, keeping the balance between the immediate, mundane matters and those strategic matters that really do matter.  And then there’s holding oneself together in the face of frustration, pressure and urgency.  HURIS provides coaching services for the decision makers at the top of the corporate ladder, as well as for those rising stars.`]
     ]

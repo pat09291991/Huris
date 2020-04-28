@@ -125,6 +125,13 @@ body, html {
     font-weight: 400;
     margin-top: 0px;
 }
+.titleTopDesc{
+   font-family: Catamaran;
+    color: #606166;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 0px; 
+}
 
 .btnExplore {
     font-family: Catamaran;
