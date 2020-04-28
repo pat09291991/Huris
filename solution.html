@@ -269,6 +269,7 @@ $(document).ready(function () {
     $('#hideCapsules').css('opacity', '0');
     $('#hideSecondCapsules').css('opacity', '0');
     $('.pshowOnAnimate').css('opacity', '0');
+    $('#mdsDesc').css('opacity', '0');
 
     var createCapsules = `
             <div class="col-lg-4" style="width: 100%;">
@@ -643,6 +644,7 @@ $(document).ready(function () {
             $('.pTitleSide').text(SECONDTITLETOPIC[0][0])
             $('.pTitleSideSub').text(SECONDARYTITLECONTENT[0][0])
             $('#mdsDesc').html(mds_desc);
+            $('#mdsDesc').animate({opacity: 1}, 2000);
             
             // SECONDARYTITLECHARACTER[0].map(function(val, index) {
             //     $(titlechar[index]).text(val)
