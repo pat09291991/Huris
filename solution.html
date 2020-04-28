@@ -123,7 +123,7 @@
                         <img class="card-img-top mx-auto" src="Image/sol3.png" alt="Card image cap"
                             style="width: 80px;">
                         <div class="card-body">
-                            <h5 class="card-title"><strong>BUSINESS SOLUTIONS</strong><br /><i>(Learn more)</i></h5>
+                            <h5 class="card-title"><strong>BUSINESS SERVICES</strong><br /><i>(Learn more)</i></h5>
                         </div>
                         </a>
                     </div>
@@ -131,7 +131,8 @@
             </div>
         </div>
     </div>
-
+    <div class="container" id="mdsDesc">
+    </div>
     <!-- CIPD CESB -->
     <div class="container" id="hideSecondCapsules">
         <div class="row text-center mx-auto" style="width: 900px;margin-top: 40px;">
@@ -401,6 +402,8 @@ $(document).ready(function () {
     `;
 
     // var titlechar = document.getElementsByClassName("pChar");
+    let mds_desc = `<h5 class="text-center pTitleSideSub">HURIS regularly runs public and in-house workshops and seminars for both private and government sectors.  All are designed to answer the learning and development needs of executives and rising stars. These programs may also be re-designed to suit the specific needs of each client organization.</h5>`
+
     var titletop = document.getElementsByClassName("pTopic");
     var contentall = document.getElementsByClassName("contentAllText");
     $('.secondaryparentAnimate').on('click', function() {
@@ -440,6 +443,9 @@ $(document).ready(function () {
             // SECONDARYTITLECHARACTER[0].map(function(val, index) {
             //     $(titlechar[index]).text(val)
             // })
+
+            
+
             SECONDTITLETOPIC[0].map(function(val, index) {
                 $(titletop[index]).text(val)
                 $(contentall[index]).on('click', function() {
@@ -605,7 +611,7 @@ $(document).ready(function () {
             $('.pNumber').text(TITLECHARACTER[0][0])
             $('.pTitleSide').text(TITLETOPIC[0][0])
             $('.pTitleSideSub').text(TITLECONTENT[0][0])
-
+            $('#mdsDesc').html("");
             // TITLECHARACTER[0].map(function(val, index) {
             //     $(titlechar[index]).text(val)
             // })
@@ -636,7 +642,8 @@ $(document).ready(function () {
             $('.pNumber').text(SECONDARYTITLECHARACTER[0][0])
             $('.pTitleSide').text(SECONDTITLETOPIC[0][0])
             $('.pTitleSideSub').text(SECONDARYTITLECONTENT[0][0])
-
+            $('#mdsDesc').html(mds_desc);
+            
             // SECONDARYTITLECHARACTER[0].map(function(val, index) {
             //     $(titlechar[index]).text(val)
             // })
@@ -710,7 +717,7 @@ $(document).ready(function () {
             $('.pNumber').text(TITLECHARACTER[1][0])
             $('.pTitleSide').text(TITLETOPIC[1][0])
             $('.pTitleSideSub').text(TITLECONTENT[1][0])
-
+            $('#mdsDesc').html("");
             // TITLECHARACTER[1].map(function(val, index) {
             //     $(titlechar[index]).text(val)
             // })
